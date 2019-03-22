@@ -1,9 +1,9 @@
 import React from "react";
 
-import App from "./App";
+import Footer from "./Footer";
 
 import { storiesOf } from "@storybook/react";
 
 import "./../../index.scss";
 
-storiesOf("App", module).add("Стандарт", () => <App />);
+storiesOf("Footer", module).add("Стандарт", () => <Footer />);

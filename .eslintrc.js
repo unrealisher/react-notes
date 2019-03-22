@@ -7,7 +7,8 @@ module.exports = {
   ],
   plugins: ["@typescript-eslint", "react"],
   rules: {
-    indent: ["error", 2],
-    "@typescript-eslint/indent": ["error", 2]
+    indent: ["error", 2, { SwitchCase: 1 }],
+    "@typescript-eslint/indent": ["error", 2, { SwitchCase: 1 }],
+    "@typescript-eslint/interface-name-prefix": 0
   }
 };

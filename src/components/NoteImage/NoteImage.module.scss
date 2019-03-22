@@ -1,0 +1,21 @@
+.main {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.image {
+  margin-top: -2px;
+  margin-left: -2px;
+  width: calc(100% + 4px);
+  height: auto;
+  object-fit: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  padding-top: 12px;
+}

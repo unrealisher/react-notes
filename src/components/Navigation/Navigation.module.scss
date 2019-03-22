@@ -1,0 +1,47 @@
+.navigation {
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  padding-bottom: 15px;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  line-height: 18px;
+
+  &_add {
+    border-radius: 4px;
+    background-color: #fc0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 970px) {
+  .menu {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .item_archive {
+    margin-right: 16px;
+  }
+
+  .button {
+    padding: 10px 16px;
+    margin: 0;
+  }
+}

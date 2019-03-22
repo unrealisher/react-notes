@@ -1,9 +1,9 @@
 import React from "react";
 
-import App from "./App";
+import Header from "./Header";
 
 import { storiesOf } from "@storybook/react";
 
 import "./../../index.scss";
 
-storiesOf("App", module).add("Стандарт", () => <App />);
+storiesOf("Header", module).add("Десктоп", () => <Header />);

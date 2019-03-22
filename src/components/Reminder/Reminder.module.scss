@@ -1,0 +1,23 @@
+.reminder {
+  padding: 12px 24px;
+  padding-bottom: 28px;
+  padding-left: 60px;
+  background-color: #db5341;
+  margin-bottom: -16px;
+}
+
+.text {
+  position: relative;
+  color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -34px;
+    background-image: url(./images/reminder.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+}

@@ -1,0 +1,49 @@
+.color {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  opacity: 0.4;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: 516px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.red {
+  background-color: #e84747;
+}
+
+.orange {
+  background-color: #f2994a;
+}
+
+.yellow {
+  background-color: #f2c94c;
+}
+
+.green {
+  background-color: #219653;
+}
+
+.light-blue {
+  background-color: #56ccf2;
+}
+
+.blue {
+  background-color: #2f80ed;
+}
+
+.purple {
+  background-color: #9b51e0;
+}

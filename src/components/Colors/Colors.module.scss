@@ -1,0 +1,39 @@
+.colors {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 0;
+
+  @media (min-width: 516px) {
+    line-height: 42px;
+    font-size: 36px;
+    margin-right: 16px;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 48px;
+
+  @media (min-width: 516px) {
+    height: 32px;
+  }
+}
+
+.list {
+  display: flex;
+  padding-bottom: 16px;
+  width: calc(100vw - 32px);
+  overflow: auto;
+
+  @media (min-width: 516px) {
+    width: 320px;
+  }
+}
+
+.item {
+  margin-right: 16px;
+}
