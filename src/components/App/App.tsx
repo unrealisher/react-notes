@@ -1,8 +1,9 @@
 import React from "react";
 
 import Header from "./../Header/Header";
-import Main from "./../Main/Main";
 import Footer from "./../Footer/Footer";
+import Colors from "./../Colors/Colors";
+import Notes from "./../Notes/Notes";
 
 import styles from "./App.module.scss";
 
@@ -13,7 +14,8 @@ const App = (): JSX.Element => {
         <Header />
       </header>
       <main className={styles.main}>
-        <Main />
+        <Colors />
+        <Notes />
       </main>
       <footer className={styles.footer}>
         <Footer />

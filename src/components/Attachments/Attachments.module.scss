@@ -27,9 +27,8 @@
 
 .item_link {
   position: relative;
-  padding: 10px;
+  padding: 10px 0;
   padding-left: 34px;
-  padding-right: 24px;
 
   &:first-child {
     padding-top: 0;
@@ -59,14 +58,24 @@
 }
 
 .image {
-  width: 64px;
-  height: 64px;
+  width: 46px;
+  height: 46px;
   border-radius: 4px;
+
+  @media (min-width: 516px) {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .link {
+  margin-top: 2px;
+  display: inline-block;
   color: black;
-  font-size: 18px;
-  line-height: 24px;
   font-weight: bold;
+
+  @media (min-width: 516px) {
+    margin: 0;
+    display: inline;
+  }
 }

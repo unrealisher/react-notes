@@ -32,8 +32,10 @@ const NoteText = (props: IProps): JSX.Element => {
         {note.text !== undefined ? (
           <p className={styles.text}>{getText(note.text)}</p>
         ) : null}
-        {tags !== undefined ? <Tags tags={tags} /> : null}
-        <Date created={note.created} />
+        <div className={styles.wrapper_down}>
+          {tags !== undefined ? <Tags tags={tags} /> : null}
+          <Date created={note.created} />
+        </div>
       </div>
     </React.Fragment>
   );

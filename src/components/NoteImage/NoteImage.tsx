@@ -17,12 +17,10 @@ const NoteImage = (props: IProps): JSX.Element => {
   const { note, color, tags } = props;
   return (
     <React.Fragment>
-      <div className={styles.main} style={{ backgroundColor: color }}>
-        <img src={note.url} className={styles.image} alt="Картинка" />
-        <div className={styles.wrapper}>
-          {tags !== undefined ? <Tags tags={tags} /> : null}
-          <Date created={note.created} />
-        </div>
+      <img src={note.url} className={styles.image} alt="Картинка" />
+      <div className={styles.wrapper} style={{ backgroundColor: color }}>
+        {tags !== undefined ? <Tags tags={tags} /> : null}
+        <Date created={note.created} />
       </div>
     </React.Fragment>
   );

@@ -15,6 +15,7 @@
 }
 
 .wrapper {
+  width: 100%;
   overflow: hidden;
   height: 48px;
 
@@ -34,6 +35,6 @@
   }
 }
 
-.item {
+.item:not(:last-child) {
   margin-right: 16px;
 }
