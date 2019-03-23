@@ -7,13 +7,20 @@ interface IProps {
 }
 
 const Tags = (props: IProps): JSX.Element => {
+  const getTag = (tag: string): string => {
+    if (tag.length > 33) {
+      return tag.substr(0, 30) + "...";
+    }
+    return tag;
+  };
+
   const { tags } = props;
   return (
     <ul className={styles.list}>
       {tags.map(tag => {
         return (
           <li key={tag} className={styles.tag}>
-            {tag}
+            {getTag(tag)}
           </li>
         );
       })}

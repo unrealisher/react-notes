@@ -16,13 +16,6 @@ interface IProps {
 const NoteText = (props: IProps): JSX.Element => {
   const { note, color, tags } = props;
 
-  const getText = (text: string): string => {
-    return (text + "").replace(
-      /([^>\r\n]?)(\r\n|\n\r|\r|\n)/g,
-      "$1" + <br /> + "$2"
-    );
-  };
-
   return (
     <React.Fragment>
       <div className={styles.wrapper} style={{ backgroundColor: color }}>
@@ -30,7 +23,7 @@ const NoteText = (props: IProps): JSX.Element => {
           <h3 className={styles.title}>{note.title}</h3>
         ) : null}
         {note.text !== undefined ? (
-          <p className={styles.text}>{getText(note.text)}</p>
+          <p className={styles.text}>{note.text}</p>
         ) : null}
         <div className={styles.wrapper_down}>
           {tags !== undefined ? <Tags tags={tags} /> : null}
