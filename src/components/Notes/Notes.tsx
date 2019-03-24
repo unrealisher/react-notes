@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import DataContext from "./../../contexts/DataContext";
+import NotesCollection from "./../../classes/NotesCollection";
 
 import IData from "./../../intefaces/IData";
 
@@ -9,7 +9,7 @@ import Note from "./../Note/Note";
 import styles from "./Notes.module.scss";
 
 const Notes = (): JSX.Element => {
-  const { tags, colors, notes }: IData = useContext(DataContext);
+  const { tags, colors, notes }: IData = NotesCollection.factory();
 
   const getTags = (tagsIds: number[] | undefined): string[] | undefined => {
     if (tagsIds !== undefined) {
