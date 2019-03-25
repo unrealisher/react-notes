@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+}
+
+.item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: inherit;
+
+  &:hover .path,
+  &:focus .path {
+    fill: rgba(0, 0, 0, 1);
+  }
+
+  &:active .path {
+    fill: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media (min-width: 704px) {
+  .list {
+    visibility: hidden;
+  }
+}

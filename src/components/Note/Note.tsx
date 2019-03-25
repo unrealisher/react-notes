@@ -28,9 +28,7 @@ const Note = (props: IProps): JSX.Element => {
       {note.type === "text" ? (
         <NoteText note={note} color={color} tags={tags} />
       ) : null}
-      {note.type === "image" ? (
-        <NoteImage note={note} color={color} tags={tags} />
-      ) : null}
+      {note.type === "image" ? <NoteImage note={note} tags={tags} /> : null}
       {note.attachments ? <Attachments attachments={note.attachments} /> : null}
     </div>
   );

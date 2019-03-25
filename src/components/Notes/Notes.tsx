@@ -42,7 +42,7 @@ const Notes = (): JSX.Element => {
     if (id !== undefined) {
       return colors[id].color;
     } else {
-      return "white";
+      return "#FFFFFF";
     }
   };
 
