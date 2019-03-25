@@ -3,8 +3,7 @@ import React from "react";
 import INote from "./../../intefaces/INote";
 import IItem from "./../../intefaces/IItem";
 
-import Tags from "./../Tags/Tags";
-import Date from "./../Date/Date";
+import NoteFooter from "./../NoteFooter/NoteFooter";
 
 import styles from "./NoteList.module.scss";
 
@@ -42,7 +41,7 @@ const NoteList = (props: IProps): JSX.Element => {
     <React.Fragment>
       <div
         className={styles.wrapper_unchecked}
-        style={{ backgroundColor: color }}
+        style={{ backgroundColor: color + "66" }}
       >
         {note.title !== undefined ? (
           <h3 className={styles.title}>{note.title}</h3>
@@ -57,8 +56,7 @@ const NoteList = (props: IProps): JSX.Element => {
         {note.items !== undefined ? (
           <ul className={styles.list_checked}>{getItems(note.items, true)}</ul>
         ) : null}
-        {tags !== undefined ? <Tags tags={tags} /> : null}
-        <Date created={note.created} />
+        <NoteFooter tags={tags} created={note.created} />
       </div>
     </React.Fragment>
   );

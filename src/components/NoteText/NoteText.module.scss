@@ -1,18 +1,18 @@
 .wrapper {
   height: 100%;
-  box-sizing: border-box;
   position: relative;
   z-index: 2;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.wrapper_color {
+  height: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: 24px;
   border-radius: 16px;
-}
-
-.wrapper_down {
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
 }
 
 .title {
