@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "../dist",
+    "rootDir": "./",
+    "lib": ["es6", "dom", "esnext"],
+    "esModuleInterop": false,
+    "isolatedModules": false,
+    "skipLibCheck": false,
+    "noEmit": false
+  },
+  "exclude": ["node_modules", "src"],
+  "include": ["./"]
+}

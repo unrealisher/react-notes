@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/express": "^4.16.1",
     "@types/jest": "24.0.11",
     "@types/node": "11.11.3",
     "@types/react": "16.8.8",
@@ -15,9 +16,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server": "node server/index.js",
+    "server": "tsc -p server && nodemon dist/index.js",
     "storybook": "start-storybook -p 9009 -s public",
-    "build": "react-scripts build",
+    "build": "tsc -p server && react-scripts build",
     "test": "react-scripts test",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint src/**/*.tsx src/**/*.ts",
@@ -50,6 +51,7 @@
     "lint-staged": "^8.1.5",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
     "prettier": "^1.16.4",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0"
