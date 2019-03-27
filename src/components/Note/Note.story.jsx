@@ -11,7 +11,7 @@ const note = {
   title: "Список покупок",
   tags: [0],
   color: 0,
-  item: [
+  items: [
     {
       text: "Оливочки",
       checked: false
