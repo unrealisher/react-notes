@@ -8,6 +8,10 @@ class NotesCollection {
     this._notes = notes;
   }
 
+  public [Symbol.iterator](): IterableIterator<INote> {
+    return this._notes.values();
+  }
+
   public static factory(notes: INote[]): NotesCollection {
     return new NotesCollection(notes);
   }

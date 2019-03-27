@@ -1,5 +1,7 @@
 import React from "react";
 
+import NotesCollection from "./../../classes/NotesCollection";
+
 import data from "./../../data/data";
 
 import IData from "./../../intefaces/IData";
