@@ -1,6 +1,6 @@
 import React from "react";
 
-import NotesCollection from "./../../classes/NotesCollection";
+import data from "./../../data/data";
 
 import IData from "./../../intefaces/IData";
 
@@ -9,7 +9,7 @@ import Note from "./../Note/Note";
 import styles from "./Notes.module.scss";
 
 const Notes = (): JSX.Element => {
-  const { tags, colors, notes }: IData = NotesCollection.factory();
+  const { tags, colors, notes }: IData = data;
 
   const getTags = (tagsIds: number[] | undefined): string[] | undefined => {
     if (tagsIds !== undefined) {

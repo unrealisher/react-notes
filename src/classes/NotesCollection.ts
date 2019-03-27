@@ -1,23 +1,15 @@
-import data from "./../data/data";
-
-import IData from "./../intefaces/IData";
 import INote from "./../intefaces/INote";
 import IAttachment from "../intefaces/IAttachment";
 
 class NotesCollection {
   private _notes: INote[] = [];
 
-  // public static async factory(url: string): Promise<INote[]> {
-  //   const res = await fetch(url);
-  //   if (!res.ok) {
-  //     throw new Error("Could not fetch");
-  //   }
-  //   const data: IData = await res.json();
-  //   return data.notes;
-  // }
+  private constructor(notes: INote[]) {
+    this._notes = notes;
+  }
 
-  public static factory(): IData {
-    return data;
+  public static factory(notes: INote[]): NotesCollection {
+    return new NotesCollection(notes);
   }
 
   private getNoteSize(note: INote): "s" | "m" | "l" {
