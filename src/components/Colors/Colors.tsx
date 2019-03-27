@@ -1,20 +1,25 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import Color from "./../Color/Color";
 
-import ColorContext from "./../../contexts/ColorContext";
+import IColor from "./../../intefaces/IColor";
 
 import styles from "./Colors.module.scss";
 
-const Colors = (): JSX.Element => {
-  const arrColors: string[] = useContext(ColorContext);
+interface IProps {
+  colors: IColor[];
+}
+
+const Colors = (props: IProps): JSX.Element => {
+  const { colors } = props;
   return (
     <div className={styles.colors}>
       <h2 className={styles.title}>Заметки</h2>
       <div className={styles.wrapper}>
         <ul className={styles.list}>
-          {arrColors.map(
-            (color): JSX.Element => {
+          {colors.map(
+            (item): JSX.Element => {
+              const color: string = item.color;
               return (
                 <li key={color} className={styles.item}>
                   <Color color={color} />

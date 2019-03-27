@@ -12,7 +12,8 @@ const Color = (props: Props): JSX.Element => {
     <React.Fragment>
       <input type="checkbox" id={`checkbox_${color}`} hidden />
       <label
-        className={styles.color + " " + styles[color]}
+        className={styles.color}
+        style={{ backgroundColor: color }}
         htmlFor={`checkbox_${color}`}
       />
     </React.Fragment>

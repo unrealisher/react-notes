@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
-
-import DataContext from "./../../contexts/DataContext";
+import React from "react";
 
 import IData from "./../../intefaces/IData";
 
@@ -8,8 +6,12 @@ import Note from "./../Note/Note";
 
 import styles from "./Notes.module.scss";
 
-const Notes = (): JSX.Element => {
-  const { tags, colors, notes }: IData = useContext(DataContext);
+interface IProps {
+  data: IData;
+}
+
+const Notes = (props: IProps): JSX.Element => {
+  const { tags, colors, notes }: IData = props.data;
 
   const getTags = (tagsIds: number[] | undefined): string[] | undefined => {
     if (tagsIds !== undefined) {
