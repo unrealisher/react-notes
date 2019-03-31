@@ -14,8 +14,8 @@
     "typescript": "3.3.3333"
   },
   "scripts": {
-    "start": "npm run server | react-scripts start",
-    "server": "node server/index.ts",
+    "start": "react-scripts start",
+    "server": "node server/index.js",
     "storybook": "start-storybook -p 9009 -s public",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -69,5 +69,6 @@
         "git add"
       ]
     }
-  }
+  },
+  "proxy": "http://localhost:8000"
 }

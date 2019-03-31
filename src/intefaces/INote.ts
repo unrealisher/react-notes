@@ -2,6 +2,7 @@ import IItem from "./IItem";
 import IAttachment from "./IAttachment";
 
 export default interface INote {
+  id: number;
   type: "list" | "text" | "image";
   title?: string;
   tags?: number[];

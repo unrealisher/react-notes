@@ -15,9 +15,7 @@ const Notes = (props: IProps): JSX.Element => {
 
   const getTags = (tagsIds: number[] | undefined): string[] | undefined => {
     if (tagsIds !== undefined) {
-      return tagsIds.map(id => {
-        return tags[id].tag;
-      });
+      return tagsIds.map(id => tags[id].tag);
     } else {
       return undefined;
     }
