@@ -12,17 +12,18 @@
 @media (min-width: 704px) {
   .list {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    grid-gap: 24px;
+    grid-column-gap: 24px;
     display: grid;
     grid-auto-flow: dense;
   }
 
   .note {
     margin: 0;
+    margin-bottom: 24px;
   }
 
   .note_small {
-    grid-column: span 2;
+    grid-column: span 2 / span 3;
     grid-row: span 1;
   }
 
@@ -37,20 +38,6 @@
   }
 }
 
-@media (min-width: 878px) {
-  .note_small {
-    grid-column: span 2;
-  }
-
-  .note_medium {
-    grid-column: span 3;
-  }
-
-  .note_large {
-    grid-column: span 5;
-  }
-}
-
 @media (min-width: 1052px) {
   .note_small {
     grid-column: span 2;
@@ -61,6 +48,12 @@
   }
 
   .note_large {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 1714px) {
+  .note_medium {
     grid-column: span 4;
   }
 }
