@@ -1,71 +1,26 @@
 {
   "tags": [
-    {
-      "id": 0,
-      "tag": "покупки"
-    },
-    {
-      "id": 1,
-      "tag": "Работа"
-    },
-    {
-      "id": 2,
-      "tag": "ШРИ"
-    },
-    {
-      "id": 3,
-      "tag": "коты"
-    },
-    {
-      "id": 4,
-      "tag": "мемы"
-    },
-    {
-      "id": 5,
-      "tag": "универ"
-    },
-    {
-      "id": 6,
-      "tag": "домашнее задание"
-    },
-    {
-      "id": 7,
-      "tag": "учеба"
-    },
+    { "id": 0, "tag": "покупки" },
+    { "id": 1, "tag": "Работа" },
+    { "id": 2, "tag": "ШРИ" },
+    { "id": 3, "tag": "коты" },
+    { "id": 4, "tag": "мемы" },
+    { "id": 5, "tag": "универ" },
+    { "id": 6, "tag": "домашнее задание" },
+    { "id": 7, "tag": "учеба" },
     {
       "id": 8,
       "tag": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
     }
   ],
   "colors": [
-    {
-      "id": 0,
-      "color": "#E84747"
-    },
-    {
-      "id": 1,
-      "color": "#F2994A"
-    },
-    {
-      "id": 2,
-      "color": "#F2C94C"
-    },
-    {
-      "id": 3,
-      "color": "#219653"
-    },
-    {
-      "id": 4,
-      "color": "#56CCF2"
-    },
-    {
-      "id": 5,
-      "color": "#2F80ED"
-    },
-    {
-      "id": 6,
-      "color": "#9B51E0"
-    }
+    { "id": 0, "color": "#E84747" },
+    { "id": 1, "color": "#F2994A" },
+    { "id": 2, "color": "#F2C94C" },
+    { "id": 3, "color": "#219653" },
+    { "id": 4, "color": "#56CCF2" },
+    { "id": 5, "color": "#2F80ED" },
+    { "id": 6, "color": "#9B51E0" }
   ],
   "notes": [
     {
@@ -75,102 +30,30 @@
       "tags": [0],
       "color": 0,
       "items": [
-        {
-          "text": "Оливочки",
-          "checked": false
-        },
-        {
-          "text": "Макароны",
-          "checked": false
-        },
-        {
-          "text": "Яйца",
-          "checked": true
-        },
-        {
-          "text": "Сливки",
-          "checked": false
-        },
-        {
-          "text": "Хлеб",
-          "checked": true
-        },
-        {
-          "text": "Чеснок",
-          "checked": false
-        },
-        {
-          "text": "Сыр",
-          "checked": true
-        },
-        {
-          "text": "Помидорки",
-          "checked": false
-        },
-        {
-          "text": "Ветчина",
-          "checked": true
-        },
-        {
-          "text": "Чай",
-          "checked": true
-        },
-        {
-          "text": "Огурец",
-          "checked": false
-        },
-        {
-          "text": "Масло сливочное",
-          "checked": true
-        },
-        {
-          "text": "Вино",
-          "checked": true
-        },
-        {
-          "text": "Камамбер",
-          "checked": true
-        },
-        {
-          "text": "Сыр фета",
-          "checked": true
-        },
-        {
-          "text": "Васаби",
-          "checked": true
-        },
-        {
-          "text": "Соевый соус",
-          "checked": true
-        },
-        {
-          "text": "Вкусняшки",
-          "checked": false
-        },
-        {
-          "text": "Красный имбирь",
-          "checked": true
-        },
-        {
-          "text": "Гвоздика",
-          "checked": true
-        },
-        {
-          "text": "Кардамон",
-          "checked": true
-        },
-        {
-          "text": "Овсяные хлопья",
-          "checked": true
-        },
-        {
-          "text": "Пельмени",
-          "checked": true
-        },
-        {
-          "text": "Сметана",
-          "checked": true
-        }
+        { "text": "Оливочки", "checked": false },
+        { "text": "Макароны", "checked": false },
+        { "text": "Яйца", "checked": true },
+        { "text": "Сливки", "checked": false },
+        { "text": "Хлеб", "checked": true },
+        { "text": "Чеснок", "checked": false },
+        { "text": "Сыр", "checked": true },
+        { "text": "Помидорки", "checked": false },
+        { "text": "Ветчина", "checked": true },
+        { "text": "Чай", "checked": true },
+        { "text": "Огурец", "checked": false },
+        { "text": "Масло сливочное", "checked": true },
+        { "text": "Вино", "checked": true },
+        { "text": "Камамбер", "checked": true },
+        { "text": "Сыр фета", "checked": true },
+        { "text": "Васаби", "checked": true },
+        { "text": "Соевый соус", "checked": true },
+        { "text": "Вкусняшки", "checked": false },
+        { "text": "Красный имбирь", "checked": true },
+        { "text": "Гвоздика", "checked": true },
+        { "text": "Кардамон", "checked": true },
+        { "text": "Овсяные хлопья", "checked": true },
+        { "text": "Пельмени", "checked": true },
+        { "text": "Сметана", "checked": true }
       ],
       "size": "l",
       "created": 1551780000000
@@ -198,10 +81,7 @@
       "type": "text",
       "title": "Генератор котов",
       "attachments": [
-        {
-          "type": "link",
-          "url": "https://thiscatdoesnotexist.com"
-        }
+        { "type": "link", "url": "https://thiscatdoesnotexist.com" }
       ],
       "size": "s",
       "created": 1551529380000
@@ -271,14 +151,8 @@
       "type": "text",
       "text": "Теперь ищу только в яндексе",
       "attachments": [
-        {
-          "type": "link",
-          "url": "https://yandex.ru"
-        },
-        {
-          "type": "link",
-          "url": "https://ya.ru"
-        }
+        { "type": "link", "url": "https://yandex.ru" },
+        { "type": "link", "url": "https://ya.ru" }
       ],
       "tags": [1],
       "size": "s",

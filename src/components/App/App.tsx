@@ -18,7 +18,6 @@ const App = (): JSX.Element => {
   useEffect(() => {
     Data.getData()
       .then(result => {
-        console.log("запрос");
         setData(result);
       })
       .catch(error => console.log(error));

@@ -1,6 +1,8 @@
 /*eslint-disable */
 const express = require("express");
-const data = require("./static/data.json");
+let data = require("./static/data.json");
+const fs = require("fs");
+const bodyParser = require("body-parser");
 /*eslint-enable */
 
 const app = express();
@@ -17,6 +19,7 @@ const getItemFromId = (id, array) => {
   return array.find(item => item.id.toString() === id);
 };
 
+app.use(bodyParser.json());
 app.use(express.static("static"));
 
 //Весь JSON
@@ -50,6 +53,51 @@ app.get("/api/cards/:id", (req, res) => {
     res.statusCode = 400;
     res.send("incorrect note id");
   }
+});
+
+//Добавление заметки
+
+app.post("/api/cards", (req, res) => {
+  const item = req.body;
+  item.id = data.notes[data.notes.length - 1].id + 1;
+  data.notes.push(item);
+  fs.writeFile(__dirname + "/static/data.json", JSON.stringify(data), () => {});
+  res.setHeader("Content-Type", "application/json");
+  res.end(JSON.stringify(data));
+});
+
+//Удаление заметки
+
+app.delete("/api/cards/:id", (req, res) => {
+  const id = req.params.id;
+  const item = getItemFromId(id, data.notes);
+  if (item) {
+    const position = data.notes.indexOf(item);
+    data.notes.splice(position, 1);
+    fs.writeFile(
+      __dirname + "/static/data.json",
+      JSON.stringify(data),
+      () => {}
+    );
+    res.setHeader("Content-Type", "application/json");
+    res.end(JSON.stringify(data));
+  } else {
+    res.statusCode = 400;
+    res.send("incorrect note id");
+  }
+});
+
+//Модификация заметки
+
+app.patch("/api/cards/:id", (req, res) => {
+  const id = req.params.id;
+  const item = req.body;
+  item.id = parseInt(id);
+  const index = data.notes.indexOf(getItemFromId(id, data.notes));
+  data.notes[index] = item;
+  fs.writeFile(__dirname + "/static/data.json", JSON.stringify(data), () => {});
+  res.setHeader("Content-Type", "application/json");
+  res.end(JSON.stringify(data));
 });
 
 //Цвета
