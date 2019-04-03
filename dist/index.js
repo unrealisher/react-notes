@@ -1,12 +1,27 @@
 "use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
 var data = require("./static/data.json");
 var fs = require("fs");
 var bodyParser = require("body-parser");
+var NotesCollection_1 = require("./classes/NotesCollection");
+var localData = data;
+var tags = localData.tags, colors = localData.colors, notes = localData.notes;
+var collection = NotesCollection_1.default.factory(notes);
 var app = express();
 var getNoteFromColor = function (color) {
-    return data.notes.filter(function (item) {
+    return collection.filter(function (item) {
         return item.color !== undefined && item.color.toString() === color;
     });
 };
@@ -18,25 +33,25 @@ app.use(express.static("static"));
 //Весь JSON
 app.get("/api/data", function (req, res) {
     res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(data));
+    res.end(JSON.stringify(localData));
 });
 //Заметки
 app.get("/api/cards", function (req, res) {
     res.setHeader("Content-Type", "application/json");
     var color = req.query.color;
-    if (color && color < data.colors.length) {
+    if (color && color < colors.length) {
         res.end(JSON.stringify(getNoteFromColor(color)));
     }
-    else if (color >= data.colors.length) {
+    else if (color >= colors.length) {
         res.statusCode = 400;
         res.send("incorrect color");
     }
-    res.end(JSON.stringify(data.notes));
+    res.end(JSON.stringify(notes));
 });
 app.get("/api/cards/:id", function (req, res) {
     res.setHeader("Content-Type", "application/json");
     var id = req.params.id;
-    var note = getItemFromId(id, data.notes);
+    var note = collection.find(function (item) { return item.id.toString() === id; });
     if (note) {
         res.end(JSON.stringify(note));
     }
@@ -48,22 +63,20 @@ app.get("/api/cards/:id", function (req, res) {
 //Добавление заметки
 app.post("/api/cards", function (req, res) {
     var item = req.body;
-    item.id = data.notes[data.notes.length - 1].id + 1;
-    data.notes.push(item);
-    fs.writeFile(__dirname + "/static/data.json", JSON.stringify(data), function () { });
+    collection.addNote(item);
+    localData = __assign({}, localData, { notes: collection.toArray() });
+    fs.writeFile(__dirname + "/static/data.json", JSON.stringify(localData), function () { });
     res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(data));
+    res.end(JSON.stringify(localData));
 });
 //Удаление заметки
 app.delete("/api/cards/:id", function (req, res) {
     var id = req.params.id;
-    var item = getItemFromId(id, data.notes);
-    if (item) {
-        var position = data.notes.indexOf(item);
-        data.notes.splice(position, 1);
-        fs.writeFile(__dirname + "/static/data.json", JSON.stringify(data), function () { });
+    if (collection.deleteNote(parseInt(id))) {
+        localData = __assign({}, localData, { notes: collection.toArray() });
+        fs.writeFile(__dirname + "/static/data.json", JSON.stringify(localData), function () { });
         res.setHeader("Content-Type", "application/json");
-        res.end(JSON.stringify(data));
+        res.end(JSON.stringify(localData));
     }
     else {
         res.statusCode = 400;
@@ -71,26 +84,29 @@ app.delete("/api/cards/:id", function (req, res) {
     }
 });
 //Модификация заметки
-app.patch("/api/cards", function (req, res) {
+app.patch("/api/cards/:id", function (req, res) {
+    var id = parseInt(req.params.id);
     var item = req.body;
-    var oldItem = getItemFromId(item.id, data.notes);
-    if (oldItem) {
-        var index = data.notes.indexOf(oldItem);
-        data.notes[index] = item;
-        fs.writeFile(__dirname + "/static/data.json", JSON.stringify(data), function () { });
+    if (collection.editNote(id, item)) {
+        localData = __assign({}, localData, { notes: collection.toArray() });
+        fs.writeFile(__dirname + "/static/data.json", JSON.stringify(localData), function () { });
         res.setHeader("Content-Type", "application/json");
-        res.end(JSON.stringify(data));
+        res.end(JSON.stringify(localData));
+    }
+    else {
+        res.statusCode = 400;
+        res.send("incorrect request");
     }
 });
 //Цвета
 app.get("/api/colors", function (req, res) {
     res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(data.colors));
+    res.end(JSON.stringify(colors));
 });
 app.get("/api/colors/:id", function (req, res) {
     res.setHeader("Content-Type", "application/json");
     var id = req.params.id;
-    var color = getItemFromId(id, data.colors);
+    var color = getItemFromId(id, colors);
     if (color) {
         res.end(JSON.stringify(color));
     }
@@ -102,12 +118,12 @@ app.get("/api/colors/:id", function (req, res) {
 //Теги
 app.get("/api/tags", function (req, res) {
     res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(data.tags));
+    res.end(JSON.stringify(tags));
 });
 app.get("/api/tags/:id", function (req, res) {
     res.setHeader("Content-Type", "application/json");
     var id = req.params.id;
-    var tag = getItemFromId(id, data.tags);
+    var tag = getItemFromId(id, tags);
     if (tag) {
         res.end(JSON.stringify(tag));
     }
