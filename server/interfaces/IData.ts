@@ -6,4 +6,5 @@ export default interface IData {
   tags: ITag[];
   colors: IColor[];
   notes: INote[];
+  archive: INote[];
 }

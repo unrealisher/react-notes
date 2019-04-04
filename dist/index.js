@@ -17,10 +17,11 @@ var fs = require("fs");
 var bodyParser = require("body-parser");
 var NotesCollection_1 = require("./classes/NotesCollection");
 var localData = data;
-var tags = localData.tags, colors = localData.colors, notes = localData.notes;
+var tags = localData.tags, colors = localData.colors, notes = localData.notes, archive = localData.archive;
 var collection = NotesCollection_1.default.factory(notes);
+var archiveCollection = NotesCollection_1.default.factory(archive);
 var app = express();
-var getNoteFromColor = function (color) {
+var getNoteFromColor = function (color, collection) {
     return collection.filter(function (item) {
         return item.color !== undefined && item.color.toString() === color;
     });
@@ -33,20 +34,20 @@ app.use(express.static("static"));
 //Весь JSON
 app.get("/api/data", function (req, res) {
     res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(localData));
+    res.end(JSON.stringify({ tags: tags, colors: colors, notes: collection.toArray() }));
 });
 //Заметки
 app.get("/api/cards", function (req, res) {
     res.setHeader("Content-Type", "application/json");
     var color = req.query.color;
     if (color && color < colors.length) {
-        res.end(JSON.stringify(getNoteFromColor(color)));
+        res.end(JSON.stringify(getNoteFromColor(color, collection)));
     }
     else if (color >= colors.length) {
         res.statusCode = 400;
         res.send("incorrect color");
     }
-    res.end(JSON.stringify(notes));
+    res.end(JSON.stringify(collection.toArray()));
 });
 app.get("/api/cards/:id", function (req, res) {
     res.setHeader("Content-Type", "application/json");
@@ -59,6 +60,19 @@ app.get("/api/cards/:id", function (req, res) {
         res.statusCode = 400;
         res.send("incorrect note id");
     }
+});
+//Заметки в архиве
+app.get("/api/archive", function (req, res) {
+    res.setHeader("Content-Type", "application/json");
+    var color = req.query.color;
+    if (color && color < colors.length) {
+        res.end(JSON.stringify(getNoteFromColor(color, archiveCollection)));
+    }
+    else if (color >= colors.length) {
+        res.statusCode = 400;
+        res.send("incorrect color");
+    }
+    res.end(JSON.stringify(archiveCollection.toArray()));
 });
 //Добавление заметки
 app.post("/api/cards", function (req, res) {

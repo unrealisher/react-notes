@@ -8,12 +8,16 @@ import IData from "./interfaces/IData";
 import INote from "./interfaces/INote";
 
 let localData: IData = data;
-let { tags, colors, notes } = localData;
+let { tags, colors, notes, archive } = localData;
 const collection = NotesCollection.factory(notes);
+const archiveCollection = NotesCollection.factory(archive);
 
 const app = express();
 
-const getNoteFromColor = (color: string): INote[] => {
+const getNoteFromColor = (
+  color: string,
+  collection: NotesCollection
+): INote[] => {
   return collection.filter((item: INote) => {
     return item.color !== undefined && item.color.toString() === color;
   });
@@ -33,7 +37,7 @@ app.use(express.static("static"));
 
 app.get("/api/data", (req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify(localData));
+  res.end(JSON.stringify({ tags, colors, notes: collection.toArray() }));
 });
 
 //Заметки
@@ -42,12 +46,12 @@ app.get("/api/cards", (req, res) => {
   res.setHeader("Content-Type", "application/json");
   const color = req.query.color;
   if (color && color < colors.length) {
-    res.end(JSON.stringify(getNoteFromColor(color)));
+    res.end(JSON.stringify(getNoteFromColor(color, collection)));
   } else if (color >= colors.length) {
     res.statusCode = 400;
     res.send("incorrect color");
   }
-  res.end(JSON.stringify(notes));
+  res.end(JSON.stringify(collection.toArray()));
 });
 
 app.get("/api/cards/:id", (req, res) => {
@@ -60,6 +64,20 @@ app.get("/api/cards/:id", (req, res) => {
     res.statusCode = 400;
     res.send("incorrect note id");
   }
+});
+
+//Заметки в архиве
+
+app.get("/api/archive", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  const color = req.query.color;
+  if (color && color < colors.length) {
+    res.end(JSON.stringify(getNoteFromColor(color, archiveCollection)));
+  } else if (color >= colors.length) {
+    res.statusCode = 400;
+    res.send("incorrect color");
+  }
+  res.end(JSON.stringify(archiveCollection.toArray()));
 });
 
 //Добавление заметки
