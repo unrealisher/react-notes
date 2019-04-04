@@ -1,3 +1,5 @@
+import axios from "axios";
+
 import IData from "./../intefaces/IData";
 import INote from "./../intefaces/INote";
 import IColor from "./../intefaces/IColor";
@@ -5,11 +7,11 @@ import ITag from "./../intefaces/ITag";
 
 export default class Data {
   private static async fetch<T>(url: string): Promise<T> {
-    const res = await fetch(url);
-    if (!res.ok) {
+    const res = await axios.get(url);
+    if (res.status !== 200) {
       throw new Error("Could not fetch");
     }
-    return await res.json();
+    return await res.data;
   }
 
   public static getData(): Promise<IData> {
