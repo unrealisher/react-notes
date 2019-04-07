@@ -8,7 +8,7 @@ import styles from "./NoteFooter.module.scss";
 
 interface IProps {
   tags?: string[];
-  created: number;
+  created?: number;
 }
 
 const NoteFooter = (props: IProps): JSX.Element => {

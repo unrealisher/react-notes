@@ -1,4 +1,4 @@
 export default interface IColor {
-  id: number;
-  color: string;
+  id?: number;
+  color?: string;
 }

@@ -1,9 +1,9 @@
 import axios from "axios";
 
-import IData from "./../intefaces/IData";
-import INote from "./../intefaces/INote";
-import IColor from "./../intefaces/IColor";
-import ITag from "./../intefaces/ITag";
+import IData from "../interfaces/IData";
+import INote from "../interfaces/INote";
+import IColor from "../interfaces/IColor";
+import ITag from "../interfaces/ITag";
 
 export default class Data {
   private static async fetch<T>(url: string): Promise<T> {
@@ -20,6 +20,10 @@ export default class Data {
 
   public static getNotes(): Promise<INote[]> {
     return this.fetch("/api/cards");
+  }
+
+  public static getArchive(): Promise<INote[]> {
+    return this.fetch("/api/archive");
   }
 
   public static getColors(): Promise<IColor[]> {

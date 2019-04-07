@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Color.module.scss";
 
 interface Props {
-  color: string;
+  color?: string;
 }
 
 const Color = (props: Props): JSX.Element => {

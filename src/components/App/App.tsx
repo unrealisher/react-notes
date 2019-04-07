@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
 
 import Header from "./../Header/Header";
 import Footer from "./../Footer/Footer";
@@ -7,23 +8,34 @@ import Notes from "./../Notes/Notes";
 
 import Data from "./../../services/Data";
 
-import IData from "./../../intefaces/IData";
+import IData from "../../interfaces/IData";
 
 import styles from "./App.module.scss";
+import { Dispatch } from "redux";
+import { fetchData } from "../../store/actions/fetchData";
+import { fetchArchive } from "../../store/actions/fetchArchive";
+import INote from "../../interfaces/INote";
 
-const App = (): JSX.Element => {
-  const initialObj: IData = { notes: [], colors: [], tags: [] };
-  const [data, setData] = useState(initialObj);
+interface IDispatchToProps {
+  onFetchData: Function;
+  onFetchArchive: Function;
+}
+
+interface IProps extends IDispatchToProps {}
+
+const App = (props: IProps): JSX.Element => {
+  const { onFetchData, onFetchArchive } = props;
 
   useEffect(() => {
     Data.getData()
       .then(result => {
-        setData(result);
+        onFetchData(result);
+        Data.getArchive().then(result => {
+          onFetchArchive(result);
+        });
       })
       .catch(error => console.log(error));
   }, []);
-
-  const { notes, colors, tags } = data;
 
   return (
     <div className={styles.body}>
@@ -31,8 +43,8 @@ const App = (): JSX.Element => {
         <Header />
       </header>
       <main className={styles.main}>
-        {colors !== [] ? <Colors colors={colors} /> : null}
-        {data !== initialObj ? <Notes data={{ notes, colors, tags }} /> : null}
+        <Colors />
+        <Notes />
       </main>
       <footer className={styles.footer}>
         <Footer />
@@ -41,4 +53,18 @@ const App = (): JSX.Element => {
   );
 };
 
-export default App;
+const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
+  return {
+    onFetchData: (state: IData): void => {
+      dispatch(fetchData(state));
+    },
+    onFetchArchive: (archive: INote[]): void => {
+      dispatch(fetchArchive(archive));
+    }
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(App);

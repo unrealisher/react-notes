@@ -1,4 +1,4 @@
 export default interface ITag {
-  id: number;
-  tag: string;
+  id?: number;
+  tag?: string;
 }

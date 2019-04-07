@@ -2,35 +2,46 @@ import React from "react";
 
 import Color from "./../Color/Color";
 
-import IColor from "./../../intefaces/IColor";
+import IColor from "../../interfaces/IColor";
 
 import styles from "./Colors.module.scss";
+import { connect } from "react-redux";
+import IState from "../../interfaces/IState";
 
-interface IProps {
-  colors: IColor[];
+interface IStateToProps {
+  colors: IColor[] | undefined;
 }
 
-const Colors = (props: IProps): JSX.Element => {
+interface IProps extends IStateToProps {}
+
+const Colors = (props: IProps): JSX.Element | null => {
   const { colors } = props;
+  if (!colors && colors === []) return null;
   return (
     <div className={styles.colors}>
       <h2 className={styles.title}>Заметки</h2>
       <div className={styles.wrapper}>
         <ul className={styles.list}>
-          {colors.map(
-            (item): JSX.Element => {
-              const color: string = item.color;
-              return (
-                <li key={color} className={styles.item}>
-                  <Color color={color} />
-                </li>
-              );
-            }
-          )}
+          {colors &&
+            colors.map(
+              (item): JSX.Element => {
+                const color: string | undefined = item.color;
+                return (
+                  <li key={color} className={styles.item}>
+                    <Color color={color} />
+                  </li>
+                );
+              }
+            )}
         </ul>
       </div>
     </div>
   );
 };
 
-export default Colors;
+const mapStateToProps = (state: IState): IStateToProps => {
+  const { colors } = state;
+  return { colors };
+};
+
+export default connect(mapStateToProps)(Colors);

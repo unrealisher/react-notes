@@ -5,7 +5,7 @@ import "moment/locale/ru";
 import styles from "./Date.module.scss";
 
 interface IProps {
-  created: number;
+  created?: number;
 }
 
 const Date = (props: IProps): JSX.Element => {

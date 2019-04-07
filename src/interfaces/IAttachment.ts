@@ -1,4 +1,4 @@
 export default interface IAttachment {
-  type: string;
-  url: string;
+  type?: string;
+  url?: string;
 }

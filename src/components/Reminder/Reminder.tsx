@@ -5,7 +5,7 @@ import "moment/locale/ru";
 import styles from "./Reminder.module.scss";
 
 interface IProps {
-  reminder: number;
+  reminder?: number;
 }
 
 const Reminder = (props: IProps): JSX.Element => {
