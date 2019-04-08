@@ -6,15 +6,22 @@ import IItem from "../../interfaces/IItem";
 import NoteFooter from "./../NoteFooter/NoteFooter";
 
 import styles from "./NoteList.module.scss";
+import { connect } from "react-redux";
+import { Dispatch } from "redux";
+import { setCheckItem } from "../../store/actions/checkItem";
 
-interface IProps {
+interface IDispatchToProps {
+  onCheckboxChange: Function;
+}
+
+interface IProps extends IDispatchToProps {
   note?: INote;
   color?: string;
   tags?: string[] | undefined;
 }
 
 const NoteList = (props: IProps): JSX.Element => {
-  const { note, color, tags }: IProps = props;
+  const { note, color, tags, onCheckboxChange }: IProps = props;
 
   const getItems = (items: IItem[], checked: boolean): JSX.Element[] => {
     return items
@@ -29,6 +36,9 @@ const NoteList = (props: IProps): JSX.Element => {
                 type="checkbox"
                 className={styles.checkbox}
                 checked={item.checked ? true : false}
+                onChange={() => {
+                  onCheckboxChange(items.indexOf(item), note);
+                }}
               />
               <span className={styles.text}>{item.text}</span>
             </label>
@@ -56,10 +66,21 @@ const NoteList = (props: IProps): JSX.Element => {
         {note && note.items !== undefined && (
           <ul className={styles.list_checked}>{getItems(note.items, true)}</ul>
         )}
-        {note && <NoteFooter tags={tags} created={note.created} />}
+        {note && <NoteFooter tags={tags} note={note} />}
       </div>
     </React.Fragment>
   );
 };
 
-export default NoteList;
+const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
+  return {
+    onCheckboxChange: (index: number, note: INote) => {
+      dispatch(setCheckItem(index, note));
+    }
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(NoteList);

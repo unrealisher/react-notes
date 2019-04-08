@@ -14,7 +14,15 @@ interface IStateToProps {
 interface IProps extends IStateToProps {}
 
 const Notes = (props: IProps): JSX.Element | null => {
-  const { tags, colors, notes, archive, activeNotes }: IState = props.state;
+  const {
+    tags,
+    colors,
+    notes,
+    archive,
+    activeNotes,
+    filter,
+    search
+  }: IState = props.state;
   if (
     !tags ||
     !colors ||
@@ -31,16 +39,27 @@ const Notes = (props: IProps): JSX.Element | null => {
   } else {
     renderNotes = archive;
   }
+  if (filter.length !== 0 && renderNotes) {
+    renderNotes = renderNotes.filter(
+      item => item.color !== undefined && filter.indexOf(item.color) !== -1
+    );
+  }
+  if (search !== "" && renderNotes) {
+    renderNotes = renderNotes.filter(
+      item => item.title && item.title.indexOf(search) !== -1
+    );
+  }
 
   const getTags = (tagsIds: number[] | undefined): string[] | undefined => {
+    let result: string[] = [];
     if (tagsIds && tags) {
-      let result: string[] = [];
       tagsIds.forEach(id => {
         const tag = tags[id].tag;
         if (tag) {
           result.push(tag);
         }
       });
+      return result;
     } else {
       return undefined;
     }
@@ -70,7 +89,6 @@ const Notes = (props: IProps): JSX.Element | null => {
       return "#FFFFFF";
     }
   };
-
   return (
     <section className={styles.notes}>
       <ul className={styles.list}>

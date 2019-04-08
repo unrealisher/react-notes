@@ -4,7 +4,7 @@ export interface ISetActiveNotesAction {
   type: actionTypes.SET_ACTIVE_NOTES;
 }
 
-export const fetchNotes = (): ISetActiveNotesAction => {
+export const setActiveNotes = (): ISetActiveNotesAction => {
   return {
     type: actionTypes.SET_ACTIVE_NOTES
   };

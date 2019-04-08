@@ -25,10 +25,9 @@ const Colors = (props: IProps): JSX.Element | null => {
           {colors &&
             colors.map(
               (item): JSX.Element => {
-                const color: string | undefined = item.color;
                 return (
-                  <li key={color} className={styles.item}>
-                    <Color color={color} />
+                  <li key={item.color} className={styles.item}>
+                    <Color color={item} />
                   </li>
                 );
               }

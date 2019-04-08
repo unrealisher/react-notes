@@ -18,7 +18,7 @@ const NoteImage = (props: IProps): JSX.Element => {
       {note && <img src={note.url} className={styles.image} alt="Картинка" />}
       {note && (
         <div className={styles.wrapper}>
-          <NoteFooter tags={tags} created={note.created} />
+          <NoteFooter note={note} tags={tags} />
         </div>
       )}
     </React.Fragment>

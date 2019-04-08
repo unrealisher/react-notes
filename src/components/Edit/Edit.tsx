@@ -1,12 +1,25 @@
 import React from "react";
 
 import styles from "./Edit.module.scss";
+import INote from "../../interfaces/INote";
+import { connect } from "react-redux";
+import { Dispatch } from "redux";
+import { archiveItem } from "../../store/actions/archiveItem";
 
-const Edit = (): JSX.Element => {
+interface IDispatchToProps {
+  onArchiveClick: Function;
+}
+
+interface IProps extends IDispatchToProps {
+  note?: INote;
+}
+
+const Edit = (props: IProps): JSX.Element => {
+  const { note, onArchiveClick } = props;
   return (
     <ul className={styles.list}>
       <li className={styles.item}>
-        <button className={styles.button}>
+        <button className={styles.button} onClick={() => onArchiveClick(note)}>
           <svg
             className={styles.svg}
             width="16"
@@ -47,4 +60,15 @@ const Edit = (): JSX.Element => {
   );
 };
 
-export default Edit;
+const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
+  return {
+    onArchiveClick: (note: INote): void => {
+      dispatch(archiveItem(note));
+    }
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Edit);

@@ -28,7 +28,7 @@ const NoteText = (props: IProps): JSX.Element => {
           {note && note.text !== undefined && (
             <p className={styles.text}>{note.text}</p>
           )}
-          {note && <NoteFooter tags={tags} created={note.created} />}
+          {note && <NoteFooter tags={tags} note={note} />}
         </div>
       </div>
     </React.Fragment>

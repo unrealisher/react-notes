@@ -4,7 +4,7 @@ export interface ISetArchiveNotesAction {
   type: actionTypes.SET_ARCHIVE_NOTES;
 }
 
-export const fetchNotes = (): ISetArchiveNotesAction => {
+export const setArchiveNotes = (): ISetArchiveNotesAction => {
   return {
     type: actionTypes.SET_ARCHIVE_NOTES
   };
