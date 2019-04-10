@@ -94,7 +94,7 @@ class NotesCollection {
   }
 
   public toArray(): INote[] {
-    return this._notes;
+    return this._notes.slice();
   }
 
   public filter(callback: (item: INote) => boolean): INote[] {

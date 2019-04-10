@@ -1,4 +1,6 @@
 import React from "react";
+import { Provider } from "react-redux";
+import store from "./../../store/index";
 
 import Note from "./Note";
 
@@ -118,5 +120,7 @@ const color = "#E84747";
 const tags = ["покупки"];
 
 storiesOf("Note", module).add("list", () => (
-  <Note note={note} color={color} tags={tags} />
+  <Provider store={store}>
+    <Note note={note} color={color} tags={tags} />
+  </Provider>
 ));

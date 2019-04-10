@@ -2,14 +2,14 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "./../../store/index";
 
-import Colors from "./Colors";
+import TagsList from "./TagsList";
 
 import { storiesOf } from "@storybook/react";
 
 import "./../../index.scss";
 
-storiesOf("Colors", module).add("Стандарт", () => (
+storiesOf("TagsList", module).add("стандарт", () => (
   <Provider store={store}>
-    <Colors />
+    <TagsList />
   </Provider>
 ));

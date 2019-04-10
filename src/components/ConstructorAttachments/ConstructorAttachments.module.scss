@@ -1,0 +1,150 @@
+.attach {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.label {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  opacity: 0.4;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    top: calc(50% - 1px);
+    left: calc(50% - 8px);
+    background-color: green;
+    transition: 0.6s;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.label_checked {
+  &::before,
+  &::after {
+    transition: 0.6s;
+    background-color: red;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+.main {
+  display: none;
+}
+
+.checkbox:checked + .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.margin_bottom {
+  margin-bottom: 12px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  position: relative;
+  margin-right: 6px;
+}
+
+.label_file {
+  width: 100%;
+}
+
+.file {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2px 10px;
+  border-radius: 15px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(218, 220, 224, 0.5);
+  background-color: white;
+
+  &:hover,
+  &:focus {
+    background-color: #fc0;
+  }
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.reset {
+  cursor: pointer;
+  position: absolute;
+  top: -8px;
+  left: calc(100% - 18px);
+  width: 20px;
+  height: 20px;
+  background-color: rgb(124, 124, 124);
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0.6;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 2px;
+    background-color: white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

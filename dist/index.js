@@ -81,7 +81,7 @@ app.post("/api/cards", function (req, res) {
     localData = __assign({}, localData, { notes: collection.toArray() });
     fs.writeFile(__dirname + "/static/data.json", JSON.stringify(localData), function () { });
     res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(localData));
+    res.end(JSON.stringify(collection.toArray()));
 });
 //Удаление заметки
 app.delete("/api/cards/:id", function (req, res) {

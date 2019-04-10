@@ -53,4 +53,9 @@ export default class Data {
   public static async deleteTag(id: number): Promise<IData> {
     return this.deleteItemById(`/api/tags/${id}`);
   }
+
+  public static async addNote(note: INote): Promise<INote[]> {
+    const res = await axios.post("/api/cards", note);
+    return res.data;
+  }
 }

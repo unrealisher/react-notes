@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 
 import Header from "./../Header/Header";
@@ -15,6 +15,7 @@ import { Dispatch } from "redux";
 import { fetchData } from "../../store/actions/fetchData";
 import { fetchArchive } from "../../store/actions/fetchArchive";
 import INote from "../../interfaces/INote";
+import NoteConstructor from "../NoteConstructor/NoteConstructor";
 
 interface IDispatchToProps {
   onFetchData: Function;
@@ -25,6 +26,7 @@ interface IProps extends IDispatchToProps {}
 
 const App = (props: IProps): JSX.Element => {
   const { onFetchData, onFetchArchive } = props;
+  const [popup, setPopup] = useState<boolean>(false);
 
   useEffect(() => {
     Data.getData()
@@ -40,7 +42,7 @@ const App = (props: IProps): JSX.Element => {
   return (
     <div className={styles.body}>
       <header className={styles.header}>
-        <Header />
+        <Header setPopup={setPopup} />
       </header>
       <main className={styles.main}>
         <Colors />
@@ -49,6 +51,7 @@ const App = (props: IProps): JSX.Element => {
       <footer className={styles.footer}>
         <Footer />
       </footer>
+      {popup && <NoteConstructor setPopup={setPopup} />}
     </div>
   );
 };

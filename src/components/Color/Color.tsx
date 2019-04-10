@@ -1,28 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./Color.module.scss";
 import IColor from "../../interfaces/IColor";
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
 import { setFilterItems } from "../../store/actions/filterItems";
+import IState from "../../interfaces/IState";
+
+interface IStateToProps {
+  filter: number[];
+}
 
 interface IDispatchToProps {
   onFilterChange: Function;
 }
 
-interface Props extends IDispatchToProps {
+interface Props extends IStateToProps, IDispatchToProps {
   color: IColor;
 }
 
 const Color = (props: Props): JSX.Element => {
-  const { color, onFilterChange } = props;
+  const { color, filter, onFilterChange } = props;
+  const [checked, setCheck] = useState(
+    color.id !== undefined && filter.indexOf(color.id) !== -1
+  );
   return (
     <React.Fragment>
       <input
         className={styles.checkbox}
         type="checkbox"
         id={`checkbox_${color.color}`}
-        onChange={() => onFilterChange(color.id)}
+        onChange={() => {
+          onFilterChange(color.id);
+          setCheck(!checked);
+        }}
+        checked={checked}
         hidden
       />
       <label
@@ -34,6 +46,12 @@ const Color = (props: Props): JSX.Element => {
   );
 };
 
+const mapStateToProps = (state: IState): IStateToProps => {
+  return {
+    filter: state.filter
+  };
+};
+
 const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
   return {
     onFilterChange: (id: number): void => {
@@ -43,6 +61,6 @@ const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Color);

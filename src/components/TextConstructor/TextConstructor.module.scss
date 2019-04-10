@@ -1,0 +1,13 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  box-sizing: border-box;
+  resize: none;
+  flex-grow: 1;
+  padding: 12px;
+  border-radius: 15px;
+}

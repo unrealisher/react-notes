@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+}
+
+.item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.label {
+  cursor: pointer;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  opacity: 0.4;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.radio:checked + .label {
+  opacity: 1;
+}

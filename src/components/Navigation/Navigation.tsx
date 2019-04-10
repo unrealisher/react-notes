@@ -13,10 +13,12 @@ interface IDispatchToProps {
   onArchiveClick: Function;
 }
 
-interface IProps extends IDispatchToProps {}
+interface IProps extends IDispatchToProps {
+  setPopup: Function;
+}
 
 const Navigation = (props: IProps): JSX.Element => {
-  const { onActiveClick, onArchiveClick } = props;
+  const { onActiveClick, onArchiveClick, setPopup } = props;
   return (
     <nav className={styles.navigation}>
       <h2 hidden>Главное меню</h2>
@@ -32,7 +34,10 @@ const Navigation = (props: IProps): JSX.Element => {
           </button>
         </li>
         <li className={styles.item}>
-          <button className={styles.button + " " + styles.button_add}>
+          <button
+            className={styles.button + " " + styles.button_add}
+            onClick={() => setPopup(true)}
+          >
             Добавить
           </button>
         </li>

@@ -92,7 +92,7 @@ app.post("/api/cards", (req, res) => {
     () => {}
   );
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify(localData));
+  res.end(JSON.stringify(collection.toArray()));
 });
 
 //Удаление заметки
