@@ -1,13 +1,15 @@
 import React, { useRef } from "react";
+import moment from "moment";
 
 import styles from "./ConstructorReminder.module.scss";
 
 interface IProps {
+  reminder: number;
   setReminder: Function;
 }
 
 const ConstructorReminder = (props: IProps): JSX.Element => {
-  const { setReminder } = props;
+  const { reminder, setReminder } = props;
   const inputRef = useRef<HTMLInputElement>(null);
   return (
     <label>
@@ -15,6 +17,9 @@ const ConstructorReminder = (props: IProps): JSX.Element => {
       <input
         className={styles.input}
         type="date"
+        value={
+          reminder !== 0 ? moment(reminder).format("YYYY-MM-DD") : undefined
+        }
         ref={inputRef}
         onChange={() => {
           if (inputRef.current && inputRef.current.valueAsDate) {

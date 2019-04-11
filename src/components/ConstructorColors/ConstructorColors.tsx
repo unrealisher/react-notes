@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import cn from "classnames";
 
 import styles from "./ConstructorColors.module.scss";
@@ -11,17 +11,13 @@ interface IStateToProps {
 }
 
 interface IProps extends IStateToProps {
+  color: number;
   setColor: Function;
   wrapper?: string;
 }
 
 const ConstructorColors = (props: IProps): JSX.Element => {
-  let { colors, wrapper, setColor } = props;
-  const [checked, setChecked] = useState<number>(-1);
-
-  useEffect(() => {
-    setColor(checked);
-  });
+  let { colors, color, wrapper, setColor } = props;
 
   colors = [
     { id: 0, color: "#E84747" },
@@ -44,7 +40,7 @@ const ConstructorColors = (props: IProps): JSX.Element => {
               id={item.color}
               className={styles.radio}
               onChange={() => {}}
-              checked={checked === item.id}
+              checked={color === item.id}
               hidden
             />
             <label
@@ -53,10 +49,10 @@ const ConstructorColors = (props: IProps): JSX.Element => {
               htmlFor={item.color}
               onClick={() => {
                 if (item.id !== undefined) {
-                  if (item.id === checked) {
-                    setChecked(-1);
+                  if (item.id === color) {
+                    setColor(-1);
                   } else {
-                    setChecked(item.id);
+                    setColor(item.id);
                   }
                 }
               }}

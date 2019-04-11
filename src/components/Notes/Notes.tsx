@@ -11,9 +11,13 @@ interface IStateToProps {
   state: IState;
 }
 
-interface IProps extends IStateToProps {}
+interface IProps extends IStateToProps {
+  setPatchItem: Function;
+  setPopup: Function;
+}
 
 const Notes = (props: IProps): JSX.Element | null => {
+  const { setPatchItem, setPopup } = props;
   const {
     tags,
     colors,
@@ -104,6 +108,8 @@ const Notes = (props: IProps): JSX.Element | null => {
                     note={note}
                     color={getColor(note.color)}
                     tags={getTags(note.tags)}
+                    setPatchItem={setPatchItem}
+                    setPopup={setPopup}
                   />
                 </li>
               );

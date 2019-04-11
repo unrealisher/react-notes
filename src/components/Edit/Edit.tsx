@@ -12,10 +12,12 @@ interface IDispatchToProps {
 
 interface IProps extends IDispatchToProps {
   note?: INote;
+  setPatchItem: Function;
+  setPopup: Function;
 }
 
 const Edit = (props: IProps): JSX.Element => {
-  const { note, onArchiveClick } = props;
+  const { note, onArchiveClick, setPatchItem, setPopup } = props;
   return (
     <ul className={styles.list}>
       <li className={styles.item}>
@@ -37,7 +39,13 @@ const Edit = (props: IProps): JSX.Element => {
         </button>
       </li>
       <li className={styles.item}>
-        <button className={styles.button}>
+        <button
+          className={styles.button}
+          onClick={() => {
+            setPatchItem(note);
+            setPopup(true);
+          }}
+        >
           <svg
             className={styles.svg}
             width="14"

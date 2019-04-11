@@ -10,10 +10,12 @@ interface IProps {
   note?: INote;
   color?: string;
   tags?: string[] | undefined;
+  setPatchItem: Function;
+  setPopup: Function;
 }
 
 const NoteText = (props: IProps): JSX.Element => {
-  const { note, color, tags } = props;
+  const { note, color, tags, setPatchItem, setPopup } = props;
 
   return (
     <React.Fragment>
@@ -28,7 +30,14 @@ const NoteText = (props: IProps): JSX.Element => {
           {note && note.text !== undefined && (
             <p className={styles.text}>{note.text}</p>
           )}
-          {note && <NoteFooter tags={tags} note={note} />}
+          {note && (
+            <NoteFooter
+              tags={tags}
+              note={note}
+              setPatchItem={setPatchItem}
+              setPopup={setPopup}
+            />
+          )}
         </div>
       </div>
     </React.Fragment>

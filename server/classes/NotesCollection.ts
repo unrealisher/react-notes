@@ -86,6 +86,7 @@ class NotesCollection {
   public editNote(id: number, note: INote): boolean {
     const item = this.find(item => item.id === id);
     if (item) {
+      item.size = this.getNoteSize(item);
       const index = this._notes.indexOf(item);
       this._notes[index] = note;
       return true;

@@ -5,17 +5,20 @@ import styles from "./TextConstructor.module.scss";
 
 interface IProps {
   wrapper?: string;
+  text: string;
   setText: Function;
 }
 
 const TextConstructor = (props: IProps): JSX.Element => {
-  const { wrapper, setText } = props;
+  const { wrapper, text, setText } = props;
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
   return (
     <div className={cn(styles.wrapper, wrapper ? wrapper : undefined)}>
       <label htmlFor="textarea">Текст заметки:</label>
       <textarea
         id="textarea"
+        name="textarea"
+        value={text}
         className={styles.textarea}
         ref={textAreaRef}
         onChange={() => {

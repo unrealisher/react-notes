@@ -58,4 +58,9 @@ export default class Data {
     const res = await axios.post("/api/cards", note);
     return res.data;
   }
+
+  public static async patchNote(note: INote): Promise<INote[]> {
+    const res = await axios.patch(`/api/cards/${note.id}`, note);
+    return res.data;
+  }
 }

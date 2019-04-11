@@ -21,11 +21,13 @@ interface IDispatchToProps {
 }
 
 interface IProps extends IDispatchToProps {
+  note: INote;
   setPopup: Function;
+  setPatchItem: Function;
 }
 
 const NoteConstructor = (props: IProps): JSX.Element => {
-  const { setPopup, onFetchNotes } = props;
+  const { setPopup, setPatchItem, note, onFetchNotes } = props;
   const [type, setType] = useState<string>("text");
   const [color, setColor] = useState<number>(-1);
   const [title, setTitle] = useState<string>("");
@@ -34,52 +36,94 @@ const NoteConstructor = (props: IProps): JSX.Element => {
   const [image, setImage] = useState<string>("");
   const [activeTags, setTags] = useState<number[]>([]);
   const [reminder, setReminder] = useState<number>(0);
-  const [attachType, setAttachType] = useState<string>("link");
+  const [attachType, setAttachType] = useState<string>(
+    note && note.attachments && note.attachments[0] && note.attachments[0].type
+      ? note.attachments[0].type
+      : "link"
+  );
   const [attachItems, setAttachItems] = useState<string[]>([]);
 
-  useEffect(() => {
-    setText("");
-    setItems([]);
-    setImage("");
-  }, [type]);
+  const [checked, setChecked] = useState<boolean>(false);
 
   useEffect(() => {
     setAttachItems([]);
   }, [attachType]);
 
+  useEffect(() => {
+    if (note !== {}) {
+      if (note.type) setType(note.type);
+      if (note.title) setTitle(note.title);
+      if (note.tags && note.tags.length > 0) setTags(note.tags);
+      if (note.color !== undefined) setColor(note.color);
+      if (note.items && note.items.length > 0) {
+        let arr: string[] = [];
+        note.items.forEach(item => {
+          if (item.text !== undefined) {
+            arr.push(item.text);
+          }
+        });
+        setItems(arr);
+      }
+      if (note.text) setText(note.text);
+      if (note.attachments) {
+        setChecked(true);
+        let arr: string[] = [];
+        note.attachments.forEach(item => {
+          if (item.url) arr.push(item.url);
+        });
+        setAttachItems(arr);
+      }
+      if (note.reminder) setReminder(note.reminder);
+      if (note.url) setImage(note.url);
+    }
+  }, []);
+
   const inputRef = useRef<HTMLInputElement>(null);
 
   const onSubmitClick = (): void => {
-    let note: INote = {};
-    note.type = type;
-    if (title !== "") note.title = title;
-    if (color !== -1) note.color = color;
-    if (text !== "") note.text = text;
-    if (items.length > 0) {
-      note.items = items.map(item => {
+    let newNote: INote = {};
+    newNote.type = type;
+    if (title !== "") newNote.title = title;
+    if (color !== -1) newNote.color = color;
+    if (text !== "" && type === "text") newNote.text = text;
+    if (items.length > 0 && type === "list") {
+      newNote.items = items.map(item => {
         return { text: item, checked: false };
       });
     }
-    if (image !== "") note.url = image;
-    if (activeTags.length > 0) note.tags = activeTags;
-    if (reminder !== 0) note.reminder = reminder;
+    if (image !== "" && type === "image") newNote.url = image;
+    if (activeTags.length > 0) newNote.tags = activeTags;
+    if (reminder !== 0) newNote.reminder = reminder;
     if (attachItems.length > 0) {
-      note.attachments = attachItems.map(item => {
+      newNote.attachments = attachItems.map(item => {
         return {
           type: attachType,
           url: item
         };
       });
     }
-    Data.addNote(note)
-      .then(result => onFetchNotes(result))
-      .catch(error => console.log(error));
+    setPatchItem({});
+    if (note.id) {
+      Data.patchNote(newNote)
+        .then(result => onFetchNotes(result))
+        .catch(error => console.log(error));
+    } else {
+      Data.addNote(newNote)
+        .then(result => onFetchNotes(result))
+        .catch(error => console.log(error));
+    }
   };
 
   return (
     <div className={styles.background}>
       <div className={styles.popup}>
-        <button className={styles.exit} onClick={() => setPopup(false)} />
+        <button
+          className={styles.exit}
+          onClick={() => {
+            setPatchItem({});
+            setPopup(false);
+          }}
+        />
         <TypeList
           wrapper={styles.wrapper}
           type={type}
@@ -91,13 +135,14 @@ const NoteConstructor = (props: IProps): JSX.Element => {
             { text: "Картинка", value: "image" }
           ]}
         />
-        <ConstructorReminder setReminder={setReminder} />
+        <ConstructorReminder reminder={reminder} setReminder={setReminder} />
         <label className={styles.title_wrapper}>
           <span className={styles.title}>Заголовок:</span>
           <input
             type="text"
             className={styles.title_input}
             ref={inputRef}
+            value={title !== "" ? title : ""}
             onChange={() => {
               if (inputRef.current) {
                 setTitle(inputRef.current.value);
@@ -106,9 +151,17 @@ const NoteConstructor = (props: IProps): JSX.Element => {
           />
         </label>
 
-        <ConstructorColors wrapper={styles.wrapper} setColor={setColor} />
+        <ConstructorColors
+          wrapper={styles.wrapper}
+          color={color}
+          setColor={setColor}
+        />
         {type === "text" && (
-          <TextConstructor wrapper={styles.wrapper} setText={setText} />
+          <TextConstructor
+            wrapper={styles.wrapper}
+            text={text}
+            setText={setText}
+          />
         )}
         {type === "list" && (
           <ListConstructor
@@ -132,6 +185,8 @@ const NoteConstructor = (props: IProps): JSX.Element => {
           onTypeChange={setAttachType}
           items={attachItems}
           setAttachItems={setAttachItems}
+          checked={checked}
+          setChecked={setChecked}
         />
         <button
           className={styles.button}

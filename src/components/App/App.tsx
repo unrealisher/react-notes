@@ -27,6 +27,7 @@ interface IProps extends IDispatchToProps {}
 const App = (props: IProps): JSX.Element => {
   const { onFetchData, onFetchArchive } = props;
   const [popup, setPopup] = useState<boolean>(false);
+  const [patchItem, setPatchItem] = useState<INote>({});
 
   useEffect(() => {
     Data.getData()
@@ -46,12 +47,18 @@ const App = (props: IProps): JSX.Element => {
       </header>
       <main className={styles.main}>
         <Colors />
-        <Notes />
+        <Notes setPatchItem={setPatchItem} setPopup={setPopup} />
       </main>
       <footer className={styles.footer}>
         <Footer />
       </footer>
-      {popup && <NoteConstructor setPopup={setPopup} />}
+      {popup && (
+        <NoteConstructor
+          setPopup={setPopup}
+          setPatchItem={setPatchItem}
+          note={patchItem}
+        />
+      )}
     </div>
   );
 };

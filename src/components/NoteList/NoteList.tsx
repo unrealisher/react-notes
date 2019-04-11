@@ -18,10 +18,19 @@ interface IProps extends IDispatchToProps {
   note?: INote;
   color?: string;
   tags?: string[] | undefined;
+  setPatchItem: Function;
+  setPopup: Function;
 }
 
 const NoteList = (props: IProps): JSX.Element => {
-  const { note, color, tags, onCheckboxChange }: IProps = props;
+  const {
+    note,
+    color,
+    tags,
+    onCheckboxChange,
+    setPatchItem,
+    setPopup
+  }: IProps = props;
 
   const getItems = (items: IItem[], checked: boolean): JSX.Element[] => {
     return items
@@ -66,7 +75,14 @@ const NoteList = (props: IProps): JSX.Element => {
         {note && note.items !== undefined && (
           <ul className={styles.list_checked}>{getItems(note.items, true)}</ul>
         )}
-        {note && <NoteFooter tags={tags} note={note} />}
+        {note && (
+          <NoteFooter
+            tags={tags}
+            note={note}
+            setPatchItem={setPatchItem}
+            setPopup={setPopup}
+          />
+        )}
       </div>
     </React.Fragment>
   );

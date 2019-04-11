@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import cn from "classnames";
 
 import TypeList from "../TypeList/TypeList";
@@ -12,11 +12,20 @@ interface IProps {
   onTypeChange: Function;
   items: string[];
   setAttachItems: Function;
+  checked: boolean;
+  setChecked: Function;
 }
 
 const ConstructorAttachments = (props: IProps): JSX.Element => {
-  const { type, name, onTypeChange, items, setAttachItems } = props;
-  const [checked, setChecked] = useState<boolean>(false);
+  const {
+    type,
+    name,
+    onTypeChange,
+    items,
+    setAttachItems,
+    checked,
+    setChecked
+  } = props;
   const inputRef = useRef<HTMLInputElement>(null);
 
   const getImages = (): JSX.Element => {
@@ -53,10 +62,16 @@ const ConstructorAttachments = (props: IProps): JSX.Element => {
         <label
           htmlFor="checkbox"
           className={cn(styles.label, checked && styles.label_checked)}
-          onClick={() => setChecked(!checked)}
         />
       </div>
-      <input type="checkbox" className={styles.checkbox} id="checkbox" hidden />
+      <input
+        type="checkbox"
+        className={styles.checkbox}
+        checked={checked}
+        onChange={() => setChecked(!checked)}
+        id="checkbox"
+        hidden
+      />
       <div className={styles.main}>
         <TypeList
           wrapper={styles.margin_bottom}

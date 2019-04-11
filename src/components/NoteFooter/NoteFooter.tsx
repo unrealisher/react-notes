@@ -16,15 +16,19 @@ interface IStateToProps {
 interface IProps extends IStateToProps {
   note?: INote;
   tags?: string[];
+  setPatchItem: Function;
+  setPopup: Function;
 }
 
 const NoteFooter = (props: IProps): JSX.Element => {
-  const { tags, note, activeNotes }: IProps = props;
+  const { tags, note, activeNotes, setPatchItem, setPopup }: IProps = props;
   return (
     <div className={styles.footer}>
       {tags !== undefined && <Tags tags={tags} />}
       <div className={styles.wrapper}>
-        {(activeNotes && note && <Edit note={note} />) || <span />}
+        {(activeNotes && note && (
+          <Edit note={note} setPatchItem={setPatchItem} setPopup={setPopup} />
+        )) || <span />}
         {note && <Date created={note.created} />}
       </div>
     </div>
