@@ -65,9 +65,9 @@ class NotesCollection {
   }
 
   public addNote(note: INote): void {
-    note.id = this._notes.length;
-    note.created = new Date().getTime();
-    if (!note.size) {
+    if (note.id === undefined) note.id = this._notes.length;
+    if (note.created === undefined) note.created = new Date().getTime();
+    if (note.size === undefined) {
       note.size = this.getNoteSize(note);
     }
     this._notes.push(note);
@@ -86,7 +86,7 @@ class NotesCollection {
   public editNote(id: number, note: INote): boolean {
     const item = this.find(item => item.id === id);
     if (item) {
-      item.size = this.getNoteSize(item);
+      note.size = this.getNoteSize(note);
       const index = this._notes.indexOf(item);
       this._notes[index] = note;
       return true;

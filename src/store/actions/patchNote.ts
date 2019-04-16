@@ -1,25 +1,25 @@
-import INote from "./../../interfaces/INote";
+import INote from "../../interfaces/INote";
 
 import { actionTypes } from "./actionTypes";
 import { ActionCreator, AnyAction } from "redux";
-import { ThunkAction, ThunkDispatch } from "redux-thunk";
 import IState from "../../interfaces/IState";
+import { ThunkDispatch, ThunkAction } from "redux-thunk";
 import Data from "../../services/Data";
 
-export interface IFetchArchiveAction {
-  type: actionTypes.FETCH_ARCHIVE;
+export interface IPatchNoteAction {
+  type: actionTypes.PATCH_NOTE;
   payload: INote[];
 }
 
-export const fetchArchive: ActionCreator<
+export const patchNote: ActionCreator<
   ThunkAction<void, IState, null, AnyAction>
-> = (): ThunkAction<void, IState, null, AnyAction> => {
+> = (note: INote): ThunkAction<void, IState, null, AnyAction> => {
   return async (
     dispatch: ThunkDispatch<IState, null, AnyAction>
   ): Promise<void> => {
-    const result = await Data.getArchive();
+    const result = await Data.patchNote(note);
     dispatch({
-      type: actionTypes.FETCH_ARCHIVE,
+      type: actionTypes.PATCH_NOTE,
       payload: result
     });
   };

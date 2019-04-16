@@ -83,14 +83,18 @@ app.post("/api/cards", function (req, res) {
     res.setHeader("Content-Type", "application/json");
     res.end(JSON.stringify(collection.toArray()));
 });
-//Удаление заметки
+//Добавление заметки в архив
 app.delete("/api/cards/:id", function (req, res) {
     var id = req.params.id;
+    var note = collection.toArray().find(function (item) { return item.id.toString() === id; });
+    console.log(note);
     if (collection.deleteNote(parseInt(id))) {
-        localData = __assign({}, localData, { notes: collection.toArray() });
+        if (note)
+            archiveCollection.addNote(note);
+        localData = __assign({}, localData, { notes: collection.toArray(), archive: archiveCollection.toArray() });
         fs.writeFile(__dirname + "/static/data.json", JSON.stringify(localData), function () { });
         res.setHeader("Content-Type", "application/json");
-        res.end(JSON.stringify(localData));
+        res.end(JSON.stringify(collection.toArray()));
     }
     else {
         res.statusCode = 400;
@@ -105,7 +109,7 @@ app.patch("/api/cards/:id", function (req, res) {
         localData = __assign({}, localData, { notes: collection.toArray() });
         fs.writeFile(__dirname + "/static/data.json", JSON.stringify(localData), function () { });
         res.setHeader("Content-Type", "application/json");
-        res.end(JSON.stringify(localData));
+        res.end(JSON.stringify(collection.toArray()));
     }
     else {
         res.statusCode = 400;

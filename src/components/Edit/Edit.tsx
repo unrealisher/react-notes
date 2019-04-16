@@ -3,8 +3,10 @@ import React from "react";
 import styles from "./Edit.module.scss";
 import INote from "../../interfaces/INote";
 import { connect } from "react-redux";
-import { Dispatch } from "redux";
+import { AnyAction } from "redux";
 import { archiveItem } from "../../store/actions/archiveItem";
+import { ThunkDispatch } from "redux-thunk";
+import IState from "../../interfaces/IState";
 
 interface IDispatchToProps {
   onArchiveClick: Function;
@@ -21,7 +23,12 @@ const Edit = (props: IProps): JSX.Element => {
   return (
     <ul className={styles.list}>
       <li className={styles.item}>
-        <button className={styles.button} onClick={() => onArchiveClick(note)}>
+        <button
+          className={styles.button}
+          onClick={() => {
+            if (note) onArchiveClick(note.id);
+          }}
+        >
           <svg
             className={styles.svg}
             width="16"
@@ -68,10 +75,12 @@ const Edit = (props: IProps): JSX.Element => {
   );
 };
 
-const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
+const mapDispatchToProps = (
+  dispatch: ThunkDispatch<IState, null, AnyAction>
+): IDispatchToProps => {
   return {
-    onArchiveClick: (note: INote): void => {
-      dispatch(archiveItem(note));
+    onArchiveClick: (id: number): void => {
+      dispatch(archiveItem(id));
     }
   };
 };

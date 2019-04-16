@@ -11,13 +11,16 @@ import ConstructorColors from "../ConstructorColors/ConstructorColors";
 import INote from "../../interfaces/INote";
 import ConstructorReminder from "../ConstructorReminder/ConstructorReminder";
 import ConstructorAttachments from "../ConstructorAttachments/ConstructorAttachments";
-import Data from "../../services/Data";
 import { connect } from "react-redux";
-import { Dispatch } from "redux";
-import { fetchNotes } from "../../store/actions/fetchNotes";
+import { AnyAction } from "redux";
+import IState from "../../interfaces/IState";
+import { patchNote } from "../../store/actions/patchNote";
+import { ThunkDispatch } from "redux-thunk";
+import { addNote } from "../../store/actions/addNote";
 
 interface IDispatchToProps {
-  onFetchNotes: Function;
+  onAddItem: Function;
+  onPatchItem: Function;
 }
 
 interface IProps extends IDispatchToProps {
@@ -27,7 +30,7 @@ interface IProps extends IDispatchToProps {
 }
 
 const NoteConstructor = (props: IProps): JSX.Element => {
-  const { setPopup, setPatchItem, note, onFetchNotes } = props;
+  const { setPopup, setPatchItem, note, onAddItem, onPatchItem } = props;
   const [type, setType] = useState<string>("text");
   const [color, setColor] = useState<number>(-1);
   const [title, setTitle] = useState<string>("");
@@ -83,6 +86,7 @@ const NoteConstructor = (props: IProps): JSX.Element => {
   const onSubmitClick = (): void => {
     let newNote: INote = {};
     newNote.type = type;
+    if (note.id !== undefined) newNote.id = note.id;
     if (title !== "") newNote.title = title;
     if (color !== -1) newNote.color = color;
     if (text !== "" && type === "text") newNote.text = text;
@@ -103,14 +107,10 @@ const NoteConstructor = (props: IProps): JSX.Element => {
       });
     }
     setPatchItem({});
-    if (note.id) {
-      Data.patchNote(newNote)
-        .then(result => onFetchNotes(result))
-        .catch(error => console.log(error));
+    if (newNote.id !== undefined) {
+      onPatchItem(newNote);
     } else {
-      Data.addNote(newNote)
-        .then(result => onFetchNotes(result))
-        .catch(error => console.log(error));
+      onAddItem(newNote);
     }
   };
 
@@ -203,10 +203,15 @@ const NoteConstructor = (props: IProps): JSX.Element => {
   );
 };
 
-const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
+const mapDispatchToProps = (
+  dispatch: ThunkDispatch<IState, null, AnyAction>
+): IDispatchToProps => {
   return {
-    onFetchNotes: (notes: INote[]): void => {
-      dispatch(fetchNotes(notes));
+    onPatchItem: (note: INote) => {
+      dispatch(patchNote(note));
+    },
+    onAddItem: (note: INote) => {
+      dispatch(addNote(note));
     }
   };
 };

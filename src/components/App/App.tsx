@@ -6,39 +6,28 @@ import Footer from "./../Footer/Footer";
 import Colors from "./../Colors/Colors";
 import Notes from "./../Notes/Notes";
 
-import Data from "./../../services/Data";
-
-import IData from "../../interfaces/IData";
-
 import styles from "./App.module.scss";
-import { Dispatch } from "redux";
 import { fetchData } from "../../store/actions/fetchData";
-import { fetchArchive } from "../../store/actions/fetchArchive";
 import INote from "../../interfaces/INote";
 import NoteConstructor from "../NoteConstructor/NoteConstructor";
+import { ThunkDispatch } from "redux-thunk";
+import IState from "../../interfaces/IState";
+import { AnyAction } from "redux";
 
 interface IDispatchToProps {
   onFetchData: Function;
-  onFetchArchive: Function;
 }
 
 interface IProps extends IDispatchToProps {}
 
 const App = (props: IProps): JSX.Element => {
-  const { onFetchData, onFetchArchive } = props;
+  const { onFetchData } = props;
   const [popup, setPopup] = useState<boolean>(false);
   const [patchItem, setPatchItem] = useState<INote>({});
 
   useEffect(() => {
-    Data.getData()
-      .then(result => {
-        onFetchData(result);
-        Data.getArchive().then(result => {
-          onFetchArchive(result);
-        });
-      })
-      .catch(error => console.log(error));
-  }, []);
+    onFetchData();
+  });
 
   return (
     <div className={styles.body}>
@@ -63,13 +52,12 @@ const App = (props: IProps): JSX.Element => {
   );
 };
 
-const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
+const mapDispatchToProps = (
+  dispatch: ThunkDispatch<IState, null, AnyAction>
+): IDispatchToProps => {
   return {
-    onFetchData: (state: IData): void => {
-      dispatch(fetchData(state));
-    },
-    onFetchArchive: (archive: INote[]): void => {
-      dispatch(fetchArchive(archive));
+    onFetchData: (): void => {
+      dispatch(fetchData());
     }
   };
 };

@@ -95,19 +95,25 @@ app.post("/api/cards", (req, res) => {
   res.end(JSON.stringify(collection.toArray()));
 });
 
-//Удаление заметки
+//Добавление заметки в архив
 
 app.delete("/api/cards/:id", (req, res) => {
   const id = req.params.id;
+  const note = collection.toArray().find(item => item.id.toString() === id);
   if (collection.deleteNote(parseInt(id))) {
-    localData = { ...localData, notes: collection.toArray() };
+    if (note) archiveCollection.addNote(note);
+    localData = {
+      ...localData,
+      notes: collection.toArray(),
+      archive: archiveCollection.toArray()
+    };
     fs.writeFile(
       __dirname + "/static/data.json",
       JSON.stringify(localData),
       () => {}
     );
     res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(localData));
+    res.end(JSON.stringify(collection.toArray()));
   } else {
     res.statusCode = 400;
     res.send("incorrect note id");
@@ -127,7 +133,7 @@ app.patch("/api/cards/:id", (req, res) => {
       () => {}
     );
     res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(localData));
+    res.end(JSON.stringify(collection.toArray()));
   } else {
     res.statusCode = 400;
     res.send("incorrect request");

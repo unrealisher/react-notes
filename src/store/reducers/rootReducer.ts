@@ -1,4 +1,3 @@
-import { IFetchNotesAction } from "../actions/fetchNotes";
 import IState from "../../interfaces/IState";
 import { IFetchDataAction } from "../actions/fetchData";
 import { actionTypes } from "../actions/actionTypes";
@@ -11,6 +10,8 @@ import INote from "../../interfaces/INote";
 import { IFilterItemsAction } from "../actions/filterItems";
 import { ISearchItemsAction } from "../actions/searchItems";
 import { IArchiveItemAction } from "../actions/archiveItem";
+import { IPatchNoteAction } from "../actions/patchNote";
+import { IAddNoteAction } from "../actions/addNote";
 
 const getNewNotes = (
   index: number,
@@ -44,7 +45,8 @@ export const rootReducer = (
   },
   /*eslint-disable*/
   action:
-    | IFetchNotesAction
+    | IAddNoteAction
+    | IPatchNoteAction
     | IFetchDataAction
     | IFetchArchiveAction
     | ISetActiveNotesAction
@@ -67,11 +69,14 @@ export const rootReducer = (
         activeNotes: state.activeNotes
       };
 
-    case actionTypes.FETCH_NOTES:
-      return { ...state, notes: action.payload };
-
     case actionTypes.FETCH_ARCHIVE:
       return { ...state, archive: action.payload };
+
+    case actionTypes.ADD_NOTE:
+      return { ...state, notes: action.payload };
+
+    case actionTypes.PATCH_NOTE:
+      return { ...state, notes: action.payload };
 
     case actionTypes.SET_ACTIVE_NOTES:
       return { ...state, activeNotes: true };
@@ -108,18 +113,7 @@ export const rootReducer = (
       return { ...state, search: action.payload };
 
     case actionTypes.ARCHIVE_ITEM:
-      let arrNotes;
-      if (state.notes) arrNotes = state.notes.slice();
-      let arrArchive;
-      if (state.archive) arrArchive = state.archive.slice();
-      console.log(state);
-      if (arrNotes && arrArchive) {
-        let index: number | undefined;
-        index = arrNotes.indexOf(action.payload);
-        arrNotes.splice(index, 1);
-        arrArchive.push(action.payload);
-      }
-      return { ...state, notes: arrNotes, archive: arrArchive };
+      return { ...state, notes: action.payload };
 
     default:
       const sessionState = sessionStorage.getItem("state");
