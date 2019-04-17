@@ -8,7 +8,7 @@ interface IProps {
   reminder?: number;
 }
 
-const Reminder = (props: IProps): JSX.Element => {
+export const Reminder = (props: IProps): JSX.Element => {
   const { reminder } = props;
   moment.locale("ru");
   return (

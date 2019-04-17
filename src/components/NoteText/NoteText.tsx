@@ -14,7 +14,7 @@ interface IProps {
   setPopup: Function;
 }
 
-const NoteText = (props: IProps): JSX.Element => {
+export const NoteText = (props: IProps): JSX.Element => {
   const { note, color, tags, setPatchItem, setPopup } = props;
 
   return (

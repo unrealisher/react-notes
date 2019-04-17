@@ -10,7 +10,7 @@ interface IProps {
   setPopup: Function;
 }
 
-const Header = (props: IProps): JSX.Element => {
+export const Header = (props: IProps): JSX.Element => {
   const { setPopup } = props;
   return (
     <div className={styles.header}>

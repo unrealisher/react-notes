@@ -8,7 +8,7 @@ interface IProps {
   attachments?: IAttachment[];
 }
 
-const Attachments = (props: IProps): JSX.Element => {
+export const Attachments = (props: IProps): JSX.Element => {
   const { attachments } = props;
 
   const getItems = (): JSX.Element => {

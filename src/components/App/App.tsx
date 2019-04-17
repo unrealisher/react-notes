@@ -20,7 +20,7 @@ interface IDispatchToProps {
 
 interface IProps extends IDispatchToProps {}
 
-const App = (props: IProps): JSX.Element => {
+export const App = (props: IProps): JSX.Element => {
   const { onFetchData } = props;
   const [popup, setPopup] = useState<boolean>(false);
   const [patchItem, setPatchItem] = useState<INote>({});

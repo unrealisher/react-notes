@@ -20,7 +20,7 @@ interface IProps extends IStateToProps {
   setPopup: Function;
 }
 
-const NoteFooter = (props: IProps): JSX.Element => {
+export const NoteFooter = (props: IProps): JSX.Element => {
   const { tags, note, activeNotes, setPatchItem, setPopup }: IProps = props;
   return (
     <div className={styles.footer}>

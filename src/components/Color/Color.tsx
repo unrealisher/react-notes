@@ -19,7 +19,7 @@ interface Props extends IStateToProps, IDispatchToProps {
   color: IColor;
 }
 
-const Color = (props: Props): JSX.Element => {
+export const Color = (props: Props): JSX.Element => {
   const { color, filter, onFilterChange } = props;
   const [checked, setCheck] = useState(
     color.id !== undefined && filter.indexOf(color.id) !== -1

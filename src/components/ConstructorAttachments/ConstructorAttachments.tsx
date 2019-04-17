@@ -16,7 +16,7 @@ interface IProps {
   setChecked: Function;
 }
 
-const ConstructorAttachments = (props: IProps): JSX.Element => {
+export const ConstructorAttachments = (props: IProps): JSX.Element => {
   const {
     type,
     name,

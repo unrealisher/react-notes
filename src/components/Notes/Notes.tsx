@@ -16,7 +16,7 @@ interface IProps extends IStateToProps {
   setPopup: Function;
 }
 
-const Notes = (props: IProps): JSX.Element | null => {
+export const Notes = (props: IProps): JSX.Element | null => {
   const { setPatchItem, setPopup } = props;
   const {
     tags,

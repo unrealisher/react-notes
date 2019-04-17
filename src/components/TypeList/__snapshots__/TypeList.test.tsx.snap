@@ -1,0 +1,577 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TypeList correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TypeList
+    items={
+      Array [
+        Object {
+          "text": "Список",
+          "value": "list",
+        },
+        Object {
+          "text": "Текст",
+          "value": "text",
+        },
+        Object {
+          "text": "Картинка",
+          "value": "image",
+        },
+      ]
+    }
+    name="text"
+    onTypeChange={[Function]}
+    type="text"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="radio"
+            hidden={true}
+            id="listtext"
+            name="text"
+            onChange={[Function]}
+            type="radio"
+            value="list"
+          />
+          <label
+            className="label"
+            htmlFor="listtext"
+          >
+            Список
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={true}
+            className="radio"
+            hidden={true}
+            id="texttext"
+            name="text"
+            onChange={[Function]}
+            type="radio"
+            value="text"
+          />
+          <label
+            className="label"
+            htmlFor="texttext"
+          >
+            Текст
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="radio"
+            hidden={true}
+            id="imagetext"
+            name="text"
+            onChange={[Function]}
+            type="radio"
+            value="image"
+          />
+          <label
+            className="label"
+            htmlFor="imagetext"
+          >
+            Картинка
+          </label>
+        </li>,
+      ],
+      "className": "list",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "list",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="listtext"
+              name="text"
+              onChange={[Function]}
+              type="radio"
+              value="list"
+            />,
+            <label
+              className="label"
+              htmlFor="listtext"
+            >
+              Список
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "radio",
+              "hidden": true,
+              "id": "listtext",
+              "name": "text",
+              "onChange": [Function],
+              "type": "radio",
+              "value": "list",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Список",
+              "className": "label",
+              "htmlFor": "listtext",
+            },
+            "ref": null,
+            "rendered": "Список",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "text",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={true}
+              className="radio"
+              hidden={true}
+              id="texttext"
+              name="text"
+              onChange={[Function]}
+              type="radio"
+              value="text"
+            />,
+            <label
+              className="label"
+              htmlFor="texttext"
+            >
+              Текст
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": true,
+              "className": "radio",
+              "hidden": true,
+              "id": "texttext",
+              "name": "text",
+              "onChange": [Function],
+              "type": "radio",
+              "value": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Текст",
+              "className": "label",
+              "htmlFor": "texttext",
+            },
+            "ref": null,
+            "rendered": "Текст",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "image",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="imagetext"
+              name="text"
+              onChange={[Function]}
+              type="radio"
+              value="image"
+            />,
+            <label
+              className="label"
+              htmlFor="imagetext"
+            >
+              Картинка
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "radio",
+              "hidden": true,
+              "id": "imagetext",
+              "name": "text",
+              "onChange": [Function],
+              "type": "radio",
+              "value": "image",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Картинка",
+              "className": "label",
+              "htmlFor": "imagetext",
+            },
+            "ref": null,
+            "rendered": "Картинка",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+    ],
+    "type": "ul",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="listtext"
+              name="text"
+              onChange={[Function]}
+              type="radio"
+              value="list"
+            />
+            <label
+              className="label"
+              htmlFor="listtext"
+            >
+              Список
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={true}
+              className="radio"
+              hidden={true}
+              id="texttext"
+              name="text"
+              onChange={[Function]}
+              type="radio"
+              value="text"
+            />
+            <label
+              className="label"
+              htmlFor="texttext"
+            >
+              Текст
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="imagetext"
+              name="text"
+              onChange={[Function]}
+              type="radio"
+              value="image"
+            />
+            <label
+              className="label"
+              htmlFor="imagetext"
+            >
+              Картинка
+            </label>
+          </li>,
+        ],
+        "className": "list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "list",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="radio"
+                hidden={true}
+                id="listtext"
+                name="text"
+                onChange={[Function]}
+                type="radio"
+                value="list"
+              />,
+              <label
+                className="label"
+                htmlFor="listtext"
+              >
+                Список
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "radio",
+                "hidden": true,
+                "id": "listtext",
+                "name": "text",
+                "onChange": [Function],
+                "type": "radio",
+                "value": "list",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Список",
+                "className": "label",
+                "htmlFor": "listtext",
+              },
+              "ref": null,
+              "rendered": "Список",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "text",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={true}
+                className="radio"
+                hidden={true}
+                id="texttext"
+                name="text"
+                onChange={[Function]}
+                type="radio"
+                value="text"
+              />,
+              <label
+                className="label"
+                htmlFor="texttext"
+              >
+                Текст
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": true,
+                "className": "radio",
+                "hidden": true,
+                "id": "texttext",
+                "name": "text",
+                "onChange": [Function],
+                "type": "radio",
+                "value": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Текст",
+                "className": "label",
+                "htmlFor": "texttext",
+              },
+              "ref": null,
+              "rendered": "Текст",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "image",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="radio"
+                hidden={true}
+                id="imagetext"
+                name="text"
+                onChange={[Function]}
+                type="radio"
+                value="image"
+              />,
+              <label
+                className="label"
+                htmlFor="imagetext"
+              >
+                Картинка
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "radio",
+                "hidden": true,
+                "id": "imagetext",
+                "name": "text",
+                "onChange": [Function],
+                "type": "radio",
+                "value": "image",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Картинка",
+                "className": "label",
+                "htmlFor": "imagetext",
+              },
+              "ref": null,
+              "rendered": "Картинка",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+      ],
+      "type": "ul",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

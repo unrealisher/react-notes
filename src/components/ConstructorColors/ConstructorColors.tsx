@@ -16,18 +16,8 @@ interface IProps extends IStateToProps {
   wrapper?: string;
 }
 
-const ConstructorColors = (props: IProps): JSX.Element => {
+export const ConstructorColors = (props: IProps): JSX.Element => {
   let { colors, color, wrapper, setColor } = props;
-
-  colors = [
-    { id: 0, color: "#E84747" },
-    { id: 1, color: "#F2994A" },
-    { id: 2, color: "#F2C94C" },
-    { id: 3, color: "#219653" },
-    { id: 4, color: "#56CCF2" },
-    { id: 5, color: "#2F80ED" },
-    { id: 6, color: "#9B51E0" }
-  ];
 
   const getItems = (): JSX.Element[] | null => {
     if (colors) {

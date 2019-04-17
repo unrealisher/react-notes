@@ -9,7 +9,7 @@ interface IProps {
   setText: Function;
 }
 
-const TextConstructor = (props: IProps): JSX.Element => {
+export const TextConstructor = (props: IProps): JSX.Element => {
   const { wrapper, text, setText } = props;
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
   return (

@@ -13,7 +13,7 @@ interface IProps {
   setPopup: Function;
 }
 
-const NoteImage = (props: IProps): JSX.Element => {
+export const NoteImage = (props: IProps): JSX.Element => {
   const { note, tags, setPatchItem, setPopup } = props;
   return (
     <React.Fragment>

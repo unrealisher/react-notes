@@ -22,7 +22,7 @@ interface IProps extends IDispatchToProps {
   setPopup: Function;
 }
 
-const NoteList = (props: IProps): JSX.Element => {
+export const NoteList = (props: IProps): JSX.Element => {
   const {
     note,
     color,

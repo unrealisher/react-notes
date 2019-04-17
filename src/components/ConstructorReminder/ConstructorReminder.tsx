@@ -8,7 +8,7 @@ interface IProps {
   setReminder: Function;
 }
 
-const ConstructorReminder = (props: IProps): JSX.Element => {
+export const ConstructorReminder = (props: IProps): JSX.Element => {
   const { reminder, setReminder } = props;
   const inputRef = useRef<HTMLInputElement>(null);
   return (

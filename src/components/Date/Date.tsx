@@ -8,7 +8,7 @@ interface IProps {
   created?: number;
 }
 
-const Date = (props: IProps): JSX.Element => {
+export const Date = (props: IProps): JSX.Element => {
   const { created } = props;
   moment.locale("ru");
   return <span className={styles.date}>{moment(created).fromNow()}</span>;

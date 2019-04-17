@@ -29,7 +29,7 @@ interface IProps extends IDispatchToProps {
   setPatchItem: Function;
 }
 
-const NoteConstructor = (props: IProps): JSX.Element => {
+export const NoteConstructor = (props: IProps): JSX.Element => {
   const { setPopup, setPatchItem, note, onAddItem, onPatchItem } = props;
   const [type, setType] = useState<string>("text");
   const [color, setColor] = useState<number>(-1);

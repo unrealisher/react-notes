@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Footer />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <a
+          className="url author"
+          href="https://vk.com/id104047139"
+        >
+          Павел Мезенцев
+        </a>,
+        <a
+          className="url"
+          href="https://academy.yandex.ru/events/frontend/"
+        >
+          © Яндекс ШРИ
+        </a>,
+      ],
+      "className": "footer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Павел Мезенцев",
+          "className": "url author",
+          "href": "https://vk.com/id104047139",
+        },
+        "ref": null,
+        "rendered": "Павел Мезенцев",
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "© Яндекс ШРИ",
+          "className": "url",
+          "href": "https://academy.yandex.ru/events/frontend/",
+        },
+        "ref": null,
+        "rendered": "© Яндекс ШРИ",
+        "type": "a",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <a
+            className="url author"
+            href="https://vk.com/id104047139"
+          >
+            Павел Мезенцев
+          </a>,
+          <a
+            className="url"
+            href="https://academy.yandex.ru/events/frontend/"
+          >
+            © Яндекс ШРИ
+          </a>,
+        ],
+        "className": "footer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Павел Мезенцев",
+            "className": "url author",
+            "href": "https://vk.com/id104047139",
+          },
+          "ref": null,
+          "rendered": "Павел Мезенцев",
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "© Яндекс ШРИ",
+            "className": "url",
+            "href": "https://academy.yandex.ru/events/frontend/",
+          },
+          "ref": null,
+          "rendered": "© Яндекс ШРИ",
+          "type": "a",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

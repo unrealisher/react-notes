@@ -1,0 +1,1352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConstructorColors correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ConstructorColors
+    color={1}
+    colors={
+      Array [
+        Object {
+          "color": "#E84747",
+          "id": 0,
+        },
+        Object {
+          "color": "#F2994A",
+          "id": 1,
+        },
+        Object {
+          "color": "#F2C94C",
+          "id": 2,
+        },
+        Object {
+          "color": "#219653",
+          "id": 3,
+        },
+        Object {
+          "color": "#56CCF2",
+          "id": 4,
+        },
+        Object {
+          "color": "#2F80ED",
+          "id": 5,
+        },
+        Object {
+          "color": "#9B51E0",
+          "id": 6,
+        },
+      ]
+    }
+    setColor={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="radio"
+            hidden={true}
+            id="#E84747"
+            name="colors"
+            onChange={[Function]}
+            type="radio"
+          />
+          <label
+            className="label"
+            htmlFor="#E84747"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#E84747",
+              }
+            }
+          />
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={true}
+            className="radio"
+            hidden={true}
+            id="#F2994A"
+            name="colors"
+            onChange={[Function]}
+            type="radio"
+          />
+          <label
+            className="label"
+            htmlFor="#F2994A"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#F2994A",
+              }
+            }
+          />
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="radio"
+            hidden={true}
+            id="#F2C94C"
+            name="colors"
+            onChange={[Function]}
+            type="radio"
+          />
+          <label
+            className="label"
+            htmlFor="#F2C94C"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#F2C94C",
+              }
+            }
+          />
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="radio"
+            hidden={true}
+            id="#219653"
+            name="colors"
+            onChange={[Function]}
+            type="radio"
+          />
+          <label
+            className="label"
+            htmlFor="#219653"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#219653",
+              }
+            }
+          />
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="radio"
+            hidden={true}
+            id="#56CCF2"
+            name="colors"
+            onChange={[Function]}
+            type="radio"
+          />
+          <label
+            className="label"
+            htmlFor="#56CCF2"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#56CCF2",
+              }
+            }
+          />
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="radio"
+            hidden={true}
+            id="#2F80ED"
+            name="colors"
+            onChange={[Function]}
+            type="radio"
+          />
+          <label
+            className="label"
+            htmlFor="#2F80ED"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#2F80ED",
+              }
+            }
+          />
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="radio"
+            hidden={true}
+            id="#9B51E0"
+            name="colors"
+            onChange={[Function]}
+            type="radio"
+          />
+          <label
+            className="label"
+            htmlFor="#9B51E0"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#9B51E0",
+              }
+            }
+          />
+        </li>,
+      ],
+      "className": "list",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "#E84747",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#E84747"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />,
+            <label
+              className="label"
+              htmlFor="#E84747"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#E84747",
+                }
+              }
+            />,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "radio",
+              "hidden": true,
+              "id": "#E84747",
+              "name": "colors",
+              "onChange": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "label",
+              "htmlFor": "#E84747",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "#E84747",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "#F2994A",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={true}
+              className="radio"
+              hidden={true}
+              id="#F2994A"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />,
+            <label
+              className="label"
+              htmlFor="#F2994A"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#F2994A",
+                }
+              }
+            />,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": true,
+              "className": "radio",
+              "hidden": true,
+              "id": "#F2994A",
+              "name": "colors",
+              "onChange": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "label",
+              "htmlFor": "#F2994A",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "#F2994A",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "#F2C94C",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#F2C94C"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />,
+            <label
+              className="label"
+              htmlFor="#F2C94C"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#F2C94C",
+                }
+              }
+            />,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "radio",
+              "hidden": true,
+              "id": "#F2C94C",
+              "name": "colors",
+              "onChange": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "label",
+              "htmlFor": "#F2C94C",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "#F2C94C",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "#219653",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#219653"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />,
+            <label
+              className="label"
+              htmlFor="#219653"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#219653",
+                }
+              }
+            />,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "radio",
+              "hidden": true,
+              "id": "#219653",
+              "name": "colors",
+              "onChange": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "label",
+              "htmlFor": "#219653",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "#219653",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "#56CCF2",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#56CCF2"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />,
+            <label
+              className="label"
+              htmlFor="#56CCF2"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#56CCF2",
+                }
+              }
+            />,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "radio",
+              "hidden": true,
+              "id": "#56CCF2",
+              "name": "colors",
+              "onChange": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "label",
+              "htmlFor": "#56CCF2",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "#56CCF2",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "#2F80ED",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#2F80ED"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />,
+            <label
+              className="label"
+              htmlFor="#2F80ED"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#2F80ED",
+                }
+              }
+            />,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "radio",
+              "hidden": true,
+              "id": "#2F80ED",
+              "name": "colors",
+              "onChange": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "label",
+              "htmlFor": "#2F80ED",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "#2F80ED",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "#9B51E0",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#9B51E0"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />,
+            <label
+              className="label"
+              htmlFor="#9B51E0"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#9B51E0",
+                }
+              }
+            />,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "radio",
+              "hidden": true,
+              "id": "#9B51E0",
+              "name": "colors",
+              "onChange": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "label",
+              "htmlFor": "#9B51E0",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "#9B51E0",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+    ],
+    "type": "ul",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#E84747"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />
+            <label
+              className="label"
+              htmlFor="#E84747"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#E84747",
+                }
+              }
+            />
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={true}
+              className="radio"
+              hidden={true}
+              id="#F2994A"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />
+            <label
+              className="label"
+              htmlFor="#F2994A"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#F2994A",
+                }
+              }
+            />
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#F2C94C"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />
+            <label
+              className="label"
+              htmlFor="#F2C94C"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#F2C94C",
+                }
+              }
+            />
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#219653"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />
+            <label
+              className="label"
+              htmlFor="#219653"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#219653",
+                }
+              }
+            />
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#56CCF2"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />
+            <label
+              className="label"
+              htmlFor="#56CCF2"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#56CCF2",
+                }
+              }
+            />
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#2F80ED"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />
+            <label
+              className="label"
+              htmlFor="#2F80ED"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#2F80ED",
+                }
+              }
+            />
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="radio"
+              hidden={true}
+              id="#9B51E0"
+              name="colors"
+              onChange={[Function]}
+              type="radio"
+            />
+            <label
+              className="label"
+              htmlFor="#9B51E0"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#9B51E0",
+                }
+              }
+            />
+          </li>,
+        ],
+        "className": "list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "#E84747",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="radio"
+                hidden={true}
+                id="#E84747"
+                name="colors"
+                onChange={[Function]}
+                type="radio"
+              />,
+              <label
+                className="label"
+                htmlFor="#E84747"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#E84747",
+                  }
+                }
+              />,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "radio",
+                "hidden": true,
+                "id": "#E84747",
+                "name": "colors",
+                "onChange": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "label",
+                "htmlFor": "#E84747",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "#E84747",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "#F2994A",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={true}
+                className="radio"
+                hidden={true}
+                id="#F2994A"
+                name="colors"
+                onChange={[Function]}
+                type="radio"
+              />,
+              <label
+                className="label"
+                htmlFor="#F2994A"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#F2994A",
+                  }
+                }
+              />,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": true,
+                "className": "radio",
+                "hidden": true,
+                "id": "#F2994A",
+                "name": "colors",
+                "onChange": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "label",
+                "htmlFor": "#F2994A",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "#F2994A",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "#F2C94C",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="radio"
+                hidden={true}
+                id="#F2C94C"
+                name="colors"
+                onChange={[Function]}
+                type="radio"
+              />,
+              <label
+                className="label"
+                htmlFor="#F2C94C"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#F2C94C",
+                  }
+                }
+              />,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "radio",
+                "hidden": true,
+                "id": "#F2C94C",
+                "name": "colors",
+                "onChange": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "label",
+                "htmlFor": "#F2C94C",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "#F2C94C",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "#219653",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="radio"
+                hidden={true}
+                id="#219653"
+                name="colors"
+                onChange={[Function]}
+                type="radio"
+              />,
+              <label
+                className="label"
+                htmlFor="#219653"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#219653",
+                  }
+                }
+              />,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "radio",
+                "hidden": true,
+                "id": "#219653",
+                "name": "colors",
+                "onChange": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "label",
+                "htmlFor": "#219653",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "#219653",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "#56CCF2",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="radio"
+                hidden={true}
+                id="#56CCF2"
+                name="colors"
+                onChange={[Function]}
+                type="radio"
+              />,
+              <label
+                className="label"
+                htmlFor="#56CCF2"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#56CCF2",
+                  }
+                }
+              />,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "radio",
+                "hidden": true,
+                "id": "#56CCF2",
+                "name": "colors",
+                "onChange": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "label",
+                "htmlFor": "#56CCF2",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "#56CCF2",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "#2F80ED",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="radio"
+                hidden={true}
+                id="#2F80ED"
+                name="colors"
+                onChange={[Function]}
+                type="radio"
+              />,
+              <label
+                className="label"
+                htmlFor="#2F80ED"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#2F80ED",
+                  }
+                }
+              />,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "radio",
+                "hidden": true,
+                "id": "#2F80ED",
+                "name": "colors",
+                "onChange": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "label",
+                "htmlFor": "#2F80ED",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "#2F80ED",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "#9B51E0",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="radio"
+                hidden={true}
+                id="#9B51E0"
+                name="colors"
+                onChange={[Function]}
+                type="radio"
+              />,
+              <label
+                className="label"
+                htmlFor="#9B51E0"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#9B51E0",
+                  }
+                }
+              />,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "radio",
+                "hidden": true,
+                "id": "#9B51E0",
+                "name": "colors",
+                "onChange": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "label",
+                "htmlFor": "#9B51E0",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "#9B51E0",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+      ],
+      "type": "ul",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

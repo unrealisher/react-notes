@@ -16,7 +16,7 @@ interface IDispatchToProps {
 
 interface IProps extends IStateToProps, IDispatchToProps {}
 
-const Search = (props: IProps): JSX.Element => {
+export const Search = (props: IProps): JSX.Element => {
   const { search, onTextChange } = props;
   const refInput = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState(search);

@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Attachments correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Attachments
+    attachments={
+      Array [
+        Object {
+          "type": "link",
+          "url": "https://yandex.ru",
+        },
+        Object {
+          "type": "link",
+          "url": "https://ya.ru",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ul
+        className="list_link"
+      >
+        <li
+          className="item_link"
+        >
+          <a
+            className="link"
+            href="https://yandex.ru"
+          >
+            yandex.ru
+          </a>
+        </li>
+        <li
+          className="item_link"
+        >
+          <a
+            className="link"
+            href="https://ya.ru"
+          >
+            ya.ru
+          </a>
+        </li>
+      </ul>,
+      "className": "attachments",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <li
+            className="item_link"
+          >
+            <a
+              className="link"
+              href="https://yandex.ru"
+            >
+              yandex.ru
+            </a>
+          </li>,
+          <li
+            className="item_link"
+          >
+            <a
+              className="link"
+              href="https://ya.ru"
+            >
+              ya.ru
+            </a>
+          </li>,
+        ],
+        "className": "list_link",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "https://yandex.ru",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="link"
+              href="https://yandex.ru"
+            >
+              yandex.ru
+            </a>,
+            "className": "item_link",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "yandex.ru",
+              "className": "link",
+              "href": "https://yandex.ru",
+            },
+            "ref": null,
+            "rendered": "yandex.ru",
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "https://ya.ru",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="link"
+              href="https://ya.ru"
+            >
+              ya.ru
+            </a>,
+            "className": "item_link",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ya.ru",
+              "className": "link",
+              "href": "https://ya.ru",
+            },
+            "ref": null,
+            "rendered": "ya.ru",
+            "type": "a",
+          },
+          "type": "li",
+        },
+      ],
+      "type": "ul",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul
+          className="list_link"
+        >
+          <li
+            className="item_link"
+          >
+            <a
+              className="link"
+              href="https://yandex.ru"
+            >
+              yandex.ru
+            </a>
+          </li>
+          <li
+            className="item_link"
+          >
+            <a
+              className="link"
+              href="https://ya.ru"
+            >
+              ya.ru
+            </a>
+          </li>
+        </ul>,
+        "className": "attachments",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              className="item_link"
+            >
+              <a
+                className="link"
+                href="https://yandex.ru"
+              >
+                yandex.ru
+              </a>
+            </li>,
+            <li
+              className="item_link"
+            >
+              <a
+                className="link"
+                href="https://ya.ru"
+              >
+                ya.ru
+              </a>
+            </li>,
+          ],
+          "className": "list_link",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "https://yandex.ru",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="link"
+                href="https://yandex.ru"
+              >
+                yandex.ru
+              </a>,
+              "className": "item_link",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "yandex.ru",
+                "className": "link",
+                "href": "https://yandex.ru",
+              },
+              "ref": null,
+              "rendered": "yandex.ru",
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "https://ya.ru",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="link"
+                href="https://ya.ru"
+              >
+                ya.ru
+              </a>,
+              "className": "item_link",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ya.ru",
+                "className": "link",
+                "href": "https://ya.ru",
+              },
+              "ref": null,
+              "rendered": "ya.ru",
+              "type": "a",
+            },
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

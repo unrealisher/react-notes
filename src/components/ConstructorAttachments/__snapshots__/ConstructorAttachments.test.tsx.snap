@@ -1,0 +1,491 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConstructorAttachments correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ConstructorAttachments
+    checked={true}
+    items={
+      Array [
+        "https://avatars.mds.yandex.net/get-pdb/1816426/93eab951-b130-4cf9-98d6-01e250be5530/orig",
+        "https://avatars.mds.yandex.net/get-pdb/1823123/fc6cf893-91b5-4e80-9f02-82acfc6fe30c/orig",
+        "https://avatars.mds.yandex.net/get-pdb/1816426/c68f1a18-f763-4a98-8a17-f7d7725753b6/orig",
+      ]
+    }
+    name="link"
+    onTypeChange={[Function]}
+    setAttachItems={[Function]}
+    setChecked={[Function]}
+    type="link"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="wrapper"
+        >
+          <span
+            className="title"
+          >
+            Дополнения
+          </span>
+          <label
+            className="label label_checked"
+            htmlFor="checkbox"
+          />
+        </div>,
+        <input
+          checked={true}
+          className="checkbox"
+          hidden={true}
+          id="checkbox"
+          onChange={[Function]}
+          type="checkbox"
+        />,
+        <div
+          className="main"
+        >
+          <TypeList
+            items={
+              Array [
+                Object {
+                  "text": "Ссылка",
+                  "value": "link",
+                },
+                Object {
+                  "text": "Картинка",
+                  "value": "image",
+                },
+              ]
+            }
+            name="link"
+            onTypeChange={[Function]}
+            type="link"
+            wrapper="margin_bottom"
+          />
+          <ListConstructor
+            items={
+              Array [
+                "https://avatars.mds.yandex.net/get-pdb/1816426/93eab951-b130-4cf9-98d6-01e250be5530/orig",
+                "https://avatars.mds.yandex.net/get-pdb/1823123/fc6cf893-91b5-4e80-9f02-82acfc6fe30c/orig",
+                "https://avatars.mds.yandex.net/get-pdb/1816426/c68f1a18-f763-4a98-8a17-f7d7725753b6/orig",
+              ]
+            }
+            setItems={[Function]}
+            wrapper="margin_bottom"
+          />
+        </div>,
+      ],
+      "className": "attach",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="title"
+            >
+              Дополнения
+            </span>,
+            <label
+              className="label label_checked"
+              htmlFor="checkbox"
+            />,
+          ],
+          "className": "wrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Дополнения",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "Дополнения",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "label label_checked",
+              "htmlFor": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "label",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "checked": true,
+          "className": "checkbox",
+          "hidden": true,
+          "id": "checkbox",
+          "onChange": [Function],
+          "type": "checkbox",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <TypeList
+              items={
+                Array [
+                  Object {
+                    "text": "Ссылка",
+                    "value": "link",
+                  },
+                  Object {
+                    "text": "Картинка",
+                    "value": "image",
+                  },
+                ]
+              }
+              name="link"
+              onTypeChange={[Function]}
+              type="link"
+              wrapper="margin_bottom"
+            />,
+            <ListConstructor
+              items={
+                Array [
+                  "https://avatars.mds.yandex.net/get-pdb/1816426/93eab951-b130-4cf9-98d6-01e250be5530/orig",
+                  "https://avatars.mds.yandex.net/get-pdb/1823123/fc6cf893-91b5-4e80-9f02-82acfc6fe30c/orig",
+                  "https://avatars.mds.yandex.net/get-pdb/1816426/c68f1a18-f763-4a98-8a17-f7d7725753b6/orig",
+                ]
+              }
+              setItems={[Function]}
+              wrapper="margin_bottom"
+            />,
+            false,
+          ],
+          "className": "main",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "items": Array [
+                Object {
+                  "text": "Ссылка",
+                  "value": "link",
+                },
+                Object {
+                  "text": "Картинка",
+                  "value": "image",
+                },
+              ],
+              "name": "link",
+              "onTypeChange": [Function],
+              "type": "link",
+              "wrapper": "margin_bottom",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "items": Array [
+                "https://avatars.mds.yandex.net/get-pdb/1816426/93eab951-b130-4cf9-98d6-01e250be5530/orig",
+                "https://avatars.mds.yandex.net/get-pdb/1823123/fc6cf893-91b5-4e80-9f02-82acfc6fe30c/orig",
+                "https://avatars.mds.yandex.net/get-pdb/1816426/c68f1a18-f763-4a98-8a17-f7d7725753b6/orig",
+              ],
+              "setItems": [Function],
+              "wrapper": "margin_bottom",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          false,
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="wrapper"
+          >
+            <span
+              className="title"
+            >
+              Дополнения
+            </span>
+            <label
+              className="label label_checked"
+              htmlFor="checkbox"
+            />
+          </div>,
+          <input
+            checked={true}
+            className="checkbox"
+            hidden={true}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />,
+          <div
+            className="main"
+          >
+            <TypeList
+              items={
+                Array [
+                  Object {
+                    "text": "Ссылка",
+                    "value": "link",
+                  },
+                  Object {
+                    "text": "Картинка",
+                    "value": "image",
+                  },
+                ]
+              }
+              name="link"
+              onTypeChange={[Function]}
+              type="link"
+              wrapper="margin_bottom"
+            />
+            <ListConstructor
+              items={
+                Array [
+                  "https://avatars.mds.yandex.net/get-pdb/1816426/93eab951-b130-4cf9-98d6-01e250be5530/orig",
+                  "https://avatars.mds.yandex.net/get-pdb/1823123/fc6cf893-91b5-4e80-9f02-82acfc6fe30c/orig",
+                  "https://avatars.mds.yandex.net/get-pdb/1816426/c68f1a18-f763-4a98-8a17-f7d7725753b6/orig",
+                ]
+              }
+              setItems={[Function]}
+              wrapper="margin_bottom"
+            />
+          </div>,
+        ],
+        "className": "attach",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="title"
+              >
+                Дополнения
+              </span>,
+              <label
+                className="label label_checked"
+                htmlFor="checkbox"
+              />,
+            ],
+            "className": "wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Дополнения",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "Дополнения",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "label label_checked",
+                "htmlFor": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "checked": true,
+            "className": "checkbox",
+            "hidden": true,
+            "id": "checkbox",
+            "onChange": [Function],
+            "type": "checkbox",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <TypeList
+                items={
+                  Array [
+                    Object {
+                      "text": "Ссылка",
+                      "value": "link",
+                    },
+                    Object {
+                      "text": "Картинка",
+                      "value": "image",
+                    },
+                  ]
+                }
+                name="link"
+                onTypeChange={[Function]}
+                type="link"
+                wrapper="margin_bottom"
+              />,
+              <ListConstructor
+                items={
+                  Array [
+                    "https://avatars.mds.yandex.net/get-pdb/1816426/93eab951-b130-4cf9-98d6-01e250be5530/orig",
+                    "https://avatars.mds.yandex.net/get-pdb/1823123/fc6cf893-91b5-4e80-9f02-82acfc6fe30c/orig",
+                    "https://avatars.mds.yandex.net/get-pdb/1816426/c68f1a18-f763-4a98-8a17-f7d7725753b6/orig",
+                  ]
+                }
+                setItems={[Function]}
+                wrapper="margin_bottom"
+              />,
+              false,
+            ],
+            "className": "main",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "items": Array [
+                  Object {
+                    "text": "Ссылка",
+                    "value": "link",
+                  },
+                  Object {
+                    "text": "Картинка",
+                    "value": "image",
+                  },
+                ],
+                "name": "link",
+                "onTypeChange": [Function],
+                "type": "link",
+                "wrapper": "margin_bottom",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "items": Array [
+                  "https://avatars.mds.yandex.net/get-pdb/1816426/93eab951-b130-4cf9-98d6-01e250be5530/orig",
+                  "https://avatars.mds.yandex.net/get-pdb/1823123/fc6cf893-91b5-4e80-9f02-82acfc6fe30c/orig",
+                  "https://avatars.mds.yandex.net/get-pdb/1816426/c68f1a18-f763-4a98-8a17-f7d7725753b6/orig",
+                ],
+                "setItems": [Function],
+                "wrapper": "margin_bottom",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            false,
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

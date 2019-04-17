@@ -9,7 +9,7 @@ interface IProps {
   setImage: Function;
 }
 
-const ImageConstructor = (props: IProps): JSX.Element => {
+export const ImageConstructor = (props: IProps): JSX.Element => {
   const { wrapper, image, setImage } = props;
   const inputRef = useRef<HTMLInputElement>(null);
   return (

@@ -9,7 +9,7 @@ interface IProps {
   setItems: Function;
 }
 
-const ListConstructor = (props: IProps): JSX.Element => {
+export const ListConstructor = (props: IProps): JSX.Element => {
   const { wrapper, items, setItems } = props;
   const inputRef = useRef<HTMLInputElement>(null);
 

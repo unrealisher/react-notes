@@ -59,13 +59,12 @@ export const rootReducer = (
 ): IState => {
   switch (action.type) {
     case actionTypes.FETCH_DATA:
-      const { tags, colors, notes, archive }: IData = action.payload;
+      const { tags, colors, notes }: IData = action.payload;
       return {
         ...state,
         tags,
         colors,
         notes,
-        archive,
         activeNotes: state.activeNotes
       };
 

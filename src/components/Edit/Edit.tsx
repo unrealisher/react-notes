@@ -18,7 +18,7 @@ interface IProps extends IDispatchToProps {
   setPopup: Function;
 }
 
-const Edit = (props: IProps): JSX.Element => {
+export const Edit = (props: IProps): JSX.Element => {
   const { note, onArchiveClick, setPatchItem, setPopup } = props;
   return (
     <ul className={styles.list}>

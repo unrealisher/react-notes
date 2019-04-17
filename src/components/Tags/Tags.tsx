@@ -6,7 +6,7 @@ interface IProps {
   tags?: string[];
 }
 
-const Tags = (props: IProps): JSX.Element => {
+export const Tags = (props: IProps): JSX.Element => {
   const getTag = (tag: string): string => {
     if (tag.length > 33) {
       return tag.substr(0, 30) + "...";

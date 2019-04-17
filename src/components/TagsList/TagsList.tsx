@@ -14,7 +14,7 @@ interface IProps extends IStateToProps {
   setTags: Function;
 }
 
-const TagsList = (props: IProps): JSX.Element => {
+export const TagsList = (props: IProps): JSX.Element => {
   let { tags, activeTags, setTags } = props;
   tags = [
     { id: 0, tag: "покупки" },

@@ -87,7 +87,6 @@ app.post("/api/cards", function (req, res) {
 app.delete("/api/cards/:id", function (req, res) {
     var id = req.params.id;
     var note = collection.toArray().find(function (item) { return item.id.toString() === id; });
-    console.log(note);
     if (collection.deleteNote(parseInt(id))) {
         if (note)
             archiveCollection.addNote(note);

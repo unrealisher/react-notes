@@ -14,7 +14,7 @@ interface IStateToProps {
 
 interface IProps extends IStateToProps {}
 
-const Colors = (props: IProps): JSX.Element | null => {
+export const Colors = (props: IProps): JSX.Element | null => {
   const { colors } = props;
   if (!colors && colors === []) return null;
   return (

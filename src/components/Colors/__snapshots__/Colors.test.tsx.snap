@@ -1,0 +1,1162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Colors correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Colors
+    colors={
+      Array [
+        Object {
+          "color": "#E84747",
+          "id": 0,
+        },
+        Object {
+          "color": "#F2994A",
+          "id": 1,
+        },
+        Object {
+          "color": "#F2C94C",
+          "id": 2,
+        },
+        Object {
+          "color": "#219653",
+          "id": 3,
+        },
+        Object {
+          "color": "#56CCF2",
+          "id": 4,
+        },
+        Object {
+          "color": "#2F80ED",
+          "id": 5,
+        },
+        Object {
+          "color": "#9B51E0",
+          "id": 6,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="title"
+        >
+          Заметки
+        </h2>,
+        <div
+          className="wrapper"
+        >
+          <ul
+            className="list"
+          >
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#E84747",
+                    "id": 0,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#F2994A",
+                    "id": 1,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#F2C94C",
+                    "id": 2,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#219653",
+                    "id": 3,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#56CCF2",
+                    "id": 4,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#2F80ED",
+                    "id": 5,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#9B51E0",
+                    "id": 6,
+                  }
+                }
+              />
+            </li>
+          </ul>
+        </div>,
+      ],
+      "className": "colors",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Заметки",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "Заметки",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ul
+            className="list"
+          >
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#E84747",
+                    "id": 0,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#F2994A",
+                    "id": 1,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#F2C94C",
+                    "id": 2,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#219653",
+                    "id": 3,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#56CCF2",
+                    "id": 4,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#2F80ED",
+                    "id": 5,
+                  }
+                }
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Color)
+                color={
+                  Object {
+                    "color": "#9B51E0",
+                    "id": 6,
+                  }
+                }
+              />
+            </li>
+          </ul>,
+          "className": "wrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#E84747",
+                      "id": 0,
+                    }
+                  }
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#F2994A",
+                      "id": 1,
+                    }
+                  }
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#F2C94C",
+                      "id": 2,
+                    }
+                  }
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#219653",
+                      "id": 3,
+                    }
+                  }
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#56CCF2",
+                      "id": 4,
+                    }
+                  }
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#2F80ED",
+                      "id": 5,
+                    }
+                  }
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#9B51E0",
+                      "id": 6,
+                    }
+                  }
+                />
+              </li>,
+            ],
+            "className": "list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "#E84747",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#E84747",
+                      "id": 0,
+                    }
+                  }
+                />,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "color": Object {
+                    "color": "#E84747",
+                    "id": 0,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "#F2994A",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#F2994A",
+                      "id": 1,
+                    }
+                  }
+                />,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "color": Object {
+                    "color": "#F2994A",
+                    "id": 1,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "#F2C94C",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#F2C94C",
+                      "id": 2,
+                    }
+                  }
+                />,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "color": Object {
+                    "color": "#F2C94C",
+                    "id": 2,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "#219653",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#219653",
+                      "id": 3,
+                    }
+                  }
+                />,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "color": Object {
+                    "color": "#219653",
+                    "id": 3,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "#56CCF2",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#56CCF2",
+                      "id": 4,
+                    }
+                  }
+                />,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "color": Object {
+                    "color": "#56CCF2",
+                    "id": 4,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "#2F80ED",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#2F80ED",
+                      "id": 5,
+                    }
+                  }
+                />,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "color": Object {
+                    "color": "#2F80ED",
+                    "id": 5,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "#9B51E0",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#9B51E0",
+                      "id": 6,
+                    }
+                  }
+                />,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "color": Object {
+                    "color": "#9B51E0",
+                    "id": 6,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="title"
+          >
+            Заметки
+          </h2>,
+          <div
+            className="wrapper"
+          >
+            <ul
+              className="list"
+            >
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#E84747",
+                      "id": 0,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#F2994A",
+                      "id": 1,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#F2C94C",
+                      "id": 2,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#219653",
+                      "id": 3,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#56CCF2",
+                      "id": 4,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#2F80ED",
+                      "id": 5,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#9B51E0",
+                      "id": 6,
+                    }
+                  }
+                />
+              </li>
+            </ul>
+          </div>,
+        ],
+        "className": "colors",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Заметки",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "Заметки",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul
+              className="list"
+            >
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#E84747",
+                      "id": 0,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#F2994A",
+                      "id": 1,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#F2C94C",
+                      "id": 2,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#219653",
+                      "id": 3,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#56CCF2",
+                      "id": 4,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#2F80ED",
+                      "id": 5,
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="item"
+              >
+                <Connect(Color)
+                  color={
+                    Object {
+                      "color": "#9B51E0",
+                      "id": 6,
+                    }
+                  }
+                />
+              </li>
+            </ul>,
+            "className": "wrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="item"
+                >
+                  <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#E84747",
+                        "id": 0,
+                      }
+                    }
+                  />
+                </li>,
+                <li
+                  className="item"
+                >
+                  <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#F2994A",
+                        "id": 1,
+                      }
+                    }
+                  />
+                </li>,
+                <li
+                  className="item"
+                >
+                  <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#F2C94C",
+                        "id": 2,
+                      }
+                    }
+                  />
+                </li>,
+                <li
+                  className="item"
+                >
+                  <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#219653",
+                        "id": 3,
+                      }
+                    }
+                  />
+                </li>,
+                <li
+                  className="item"
+                >
+                  <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#56CCF2",
+                        "id": 4,
+                      }
+                    }
+                  />
+                </li>,
+                <li
+                  className="item"
+                >
+                  <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#2F80ED",
+                        "id": 5,
+                      }
+                    }
+                  />
+                </li>,
+                <li
+                  className="item"
+                >
+                  <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#9B51E0",
+                        "id": 6,
+                      }
+                    }
+                  />
+                </li>,
+              ],
+              "className": "list",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "#E84747",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#E84747",
+                        "id": 0,
+                      }
+                    }
+                  />,
+                  "className": "item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "color": Object {
+                      "color": "#E84747",
+                      "id": 0,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "#F2994A",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#F2994A",
+                        "id": 1,
+                      }
+                    }
+                  />,
+                  "className": "item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "color": Object {
+                      "color": "#F2994A",
+                      "id": 1,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "#F2C94C",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#F2C94C",
+                        "id": 2,
+                      }
+                    }
+                  />,
+                  "className": "item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "color": Object {
+                      "color": "#F2C94C",
+                      "id": 2,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "#219653",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#219653",
+                        "id": 3,
+                      }
+                    }
+                  />,
+                  "className": "item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "color": Object {
+                      "color": "#219653",
+                      "id": 3,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "#56CCF2",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#56CCF2",
+                        "id": 4,
+                      }
+                    }
+                  />,
+                  "className": "item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "color": Object {
+                      "color": "#56CCF2",
+                      "id": 4,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "#2F80ED",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#2F80ED",
+                        "id": 5,
+                      }
+                    }
+                  />,
+                  "className": "item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "color": Object {
+                      "color": "#2F80ED",
+                      "id": 5,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "#9B51E0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Connect(Color)
+                    color={
+                      Object {
+                        "color": "#9B51E0",
+                        "id": 6,
+                      }
+                    }
+                  />,
+                  "className": "item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "color": Object {
+                      "color": "#9B51E0",
+                      "id": 6,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

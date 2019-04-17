@@ -16,7 +16,7 @@ interface IProps {
   items: IItem[];
 }
 
-const TypeList = (props: IProps): JSX.Element => {
+export const TypeList = (props: IProps): JSX.Element => {
   const { wrapper, type, onTypeChange, items, name } = props;
   const getItems = (): JSX.Element[] => {
     return items.map(item => {

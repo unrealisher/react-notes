@@ -21,7 +21,7 @@ interface IProps extends IDispatchToProps {
   setPopup: Function;
 }
 
-const Navigation = (props: IProps): JSX.Element => {
+export const Navigation = (props: IProps): JSX.Element => {
   const { onActiveClick, onArchiveClick, onFetchArchive, setPopup } = props;
   return (
     <nav className={styles.navigation}>

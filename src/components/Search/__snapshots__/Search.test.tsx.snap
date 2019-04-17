@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Search
+    onTextChange={[Function]}
+    search=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="wrapper"
+        >
+          <input
+            className="input"
+            onChange={[Function]}
+            onKeyUp={[Function]}
+            placeholder="Поиск"
+            type="text"
+            value=""
+          />
+          <button
+            className="reset"
+            onClick={[Function]}
+          />
+        </div>,
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          Поиск
+        </button>,
+      ],
+      "className": "search",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              className="input"
+              onChange={[Function]}
+              onKeyUp={[Function]}
+              placeholder="Поиск"
+              type="text"
+              value=""
+            />,
+            <button
+              className="reset"
+              onClick={[Function]}
+            />,
+          ],
+          "className": "wrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "input",
+              "onChange": [Function],
+              "onKeyUp": [Function],
+              "placeholder": "Поиск",
+              "type": "text",
+              "value": "",
+            },
+            "ref": Object {
+              "current": null,
+            },
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "reset",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Поиск",
+          "className": "button",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Поиск",
+        "type": "button",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="wrapper"
+          >
+            <input
+              className="input"
+              onChange={[Function]}
+              onKeyUp={[Function]}
+              placeholder="Поиск"
+              type="text"
+              value=""
+            />
+            <button
+              className="reset"
+              onClick={[Function]}
+            />
+          </div>,
+          <button
+            className="button"
+            onClick={[Function]}
+          >
+            Поиск
+          </button>,
+        ],
+        "className": "search",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                className="input"
+                onChange={[Function]}
+                onKeyUp={[Function]}
+                placeholder="Поиск"
+                type="text"
+                value=""
+              />,
+              <button
+                className="reset"
+                onClick={[Function]}
+              />,
+            ],
+            "className": "wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "input",
+                "onChange": [Function],
+                "onKeyUp": [Function],
+                "placeholder": "Поиск",
+                "type": "text",
+                "value": "",
+              },
+              "ref": Object {
+                "current": null,
+              },
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "reset",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Поиск",
+            "className": "button",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Поиск",
+          "type": "button",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
