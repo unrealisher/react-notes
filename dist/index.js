@@ -21,6 +21,8 @@ var tags = localData.tags, colors = localData.colors, notes = localData.notes, a
 var collection = NotesCollection_1.default.factory(notes);
 var archiveCollection = NotesCollection_1.default.factory(archive);
 var app = express();
+app.use(bodyParser.json());
+app.use(express.static("static"));
 var getNoteFromColor = function (color, collection) {
     return collection.filter(function (item) {
         return item.color !== undefined && item.color.toString() === color;
@@ -29,8 +31,6 @@ var getNoteFromColor = function (color, collection) {
 var getItemFromId = function (id, array) {
     return array.find(function (item) { return item.id.toString() === id; });
 };
-app.use(bodyParser.json());
-app.use(express.static("static"));
 //Весь JSON
 app.get("/api/data", function (req, res) {
     res.setHeader("Content-Type", "application/json");
