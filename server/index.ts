@@ -13,6 +13,8 @@ const collection = NotesCollection.factory(notes);
 const archiveCollection = NotesCollection.factory(archive);
 
 const app = express();
+app.use(bodyParser.json());
+app.use(express.static("static"));
 
 const getNoteFromColor = (
   color: string,
@@ -29,9 +31,6 @@ const getItemFromId = <T extends { id: number }>(
 ): T | undefined => {
   return array.find(item => item.id.toString() === id);
 };
-
-app.use(bodyParser.json());
-app.use(express.static("static"));
 
 //Весь JSON
 

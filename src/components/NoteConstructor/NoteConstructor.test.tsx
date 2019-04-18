@@ -30,4 +30,68 @@ describe("NoteConstructor", () => {
     );
     expect(component).toMatchSnapshot();
   });
+
+  it("setPopup calls when submit button is clicked", () => {
+    const setPopup = jest.fn();
+    const component = shallow(
+      <NoteConstructor
+        onAddItem={onAddItem}
+        onPatchItem={onPatchItem}
+        note={note}
+        setPopup={setPopup}
+        setPatchItem={setPatchItem}
+      />
+    );
+    const button = component.find(".button");
+    button.simulate("click");
+    expect(setPopup).toBeCalledWith(false);
+  });
+
+  it("setPopup calls when exit button is clicked", () => {
+    const setPopup = jest.fn();
+    const component = shallow(
+      <NoteConstructor
+        onAddItem={onAddItem}
+        onPatchItem={onPatchItem}
+        note={note}
+        setPopup={setPopup}
+        setPatchItem={setPatchItem}
+      />
+    );
+    const button = component.find(".exit");
+    button.simulate("click");
+    expect(setPopup).toBeCalledWith(false);
+  });
+
+  it("setPatchItem calls when submit button is clicked", () => {
+    const setPatchItem = jest.fn();
+    const component = shallow(
+      <NoteConstructor
+        onAddItem={onAddItem}
+        onPatchItem={onPatchItem}
+        note={note}
+        setPopup={setPopup}
+        setPatchItem={setPatchItem}
+      />
+    );
+    const button = component.find(".button");
+    button.simulate("click");
+    expect(setPatchItem).toBeCalledWith({});
+  });
+
+  it("setPatchItem calls when exit button is clicked", () => {
+    const setPatchItem = jest.fn();
+    const component = shallow(
+      <NoteConstructor
+        onAddItem={onAddItem}
+        onPatchItem={onPatchItem}
+        note={note}
+        setPopup={setPopup}
+        setPatchItem={setPatchItem}
+      />
+    );
+    const button = component.find(".exit");
+    button.simulate("click");
+    expect(setPatchItem).toBeCalledWith({});
+  });
 });

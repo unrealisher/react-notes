@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import { ImageConstructor } from "./ImageConstructor";
 
 describe("ImageConstructor", () => {
@@ -11,5 +11,15 @@ describe("ImageConstructor", () => {
       <ImageConstructor image={image} setImage={setImage} />
     );
     expect(component).toMatchSnapshot();
+  });
+
+  it("setImage calls when reset button is clicked", () => {
+    const setImage = jest.fn();
+    const component = mount(
+      <ImageConstructor image={image} setImage={setImage} />
+    );
+    const button = component.find(".reset");
+    button.simulate("click");
+    expect(setImage).toBeCalledWith("");
   });
 });

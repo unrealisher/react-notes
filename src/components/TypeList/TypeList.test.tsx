@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import { TypeList } from "./TypeList";
 
 describe("TypeList", () => {
@@ -11,6 +11,7 @@ describe("TypeList", () => {
     { text: "Текст", value: "text" },
     { text: "Картинка", value: "image" }
   ];
+
   it("correct render", () => {
     const component = shallow(
       <TypeList
@@ -21,5 +22,20 @@ describe("TypeList", () => {
       />
     );
     expect(component).toMatchSnapshot();
+  });
+
+  it("onTypeChange calls when button is clicked", () => {
+    const onTypeChange = jest.fn();
+    const component = mount(
+      <TypeList
+        type={type}
+        name={name}
+        onTypeChange={onTypeChange}
+        items={items}
+      />
+    );
+    const radio = component.find(".radio");
+    radio.forEach(item => item.simulate("change"));
+    expect(onTypeChange).toBeCalledTimes(3);
   });
 });

@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import { ConstructorAttachments } from "./ConstructorAttachments";
 
 describe("ConstructorAttachments", () => {
@@ -14,6 +14,7 @@ describe("ConstructorAttachments", () => {
   const setAttachItems = (): void => {};
   const checked = true;
   const setChecked = (): void => {};
+
   it("correct render", () => {
     const component = shallow(
       <ConstructorAttachments
@@ -27,5 +28,23 @@ describe("ConstructorAttachments", () => {
       />
     );
     expect(component).toMatchSnapshot();
+  });
+
+  it("call setChecked when checkbox checked", () => {
+    const setChecked = jest.fn();
+    const component = mount(
+      <ConstructorAttachments
+        type={type}
+        name={name}
+        onTypeChange={onTypeChange}
+        items={items}
+        setAttachItems={setAttachItems}
+        checked={checked}
+        setChecked={setChecked}
+      />
+    );
+    const checkbox = component.find(".checkbox");
+    checkbox.simulate("change");
+    expect(setChecked).toBeCalledWith(!checked);
   });
 });

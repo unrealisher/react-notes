@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import { Edit } from "./Edit";
 
 describe("Edit", () => {
@@ -26,5 +26,50 @@ describe("Edit", () => {
       />
     );
     expect(component).toMatchSnapshot();
+  });
+
+  it("onArchiveClick calls when first button is clicked", () => {
+    const onArchiveClick = jest.fn();
+    const component = mount(
+      <Edit
+        onArchiveClick={onArchiveClick}
+        note={note}
+        setPatchItem={setPatchItem}
+        setPopup={setPopup}
+      />
+    );
+    const button = component.find(".button").first();
+    button.simulate("click");
+    expect(onArchiveClick).toBeCalledWith(note.id);
+  });
+
+  it("setPatchItem calls when second button is clicked", () => {
+    const setPatchItem = jest.fn();
+    const component = mount(
+      <Edit
+        onArchiveClick={onArchiveClick}
+        note={note}
+        setPatchItem={setPatchItem}
+        setPopup={setPopup}
+      />
+    );
+    const button = component.find(".button").last();
+    button.simulate("click");
+    expect(setPatchItem).toBeCalledWith(note);
+  });
+
+  it("setPopup calls when second button is clicked", () => {
+    const setPopup = jest.fn();
+    const component = mount(
+      <Edit
+        onArchiveClick={onArchiveClick}
+        note={note}
+        setPatchItem={setPatchItem}
+        setPopup={setPopup}
+      />
+    );
+    const button = component.find(".button").last();
+    button.simulate("click");
+    expect(setPopup).toBeCalledWith(true);
   });
 });

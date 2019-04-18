@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import { Color } from "./Color";
 
 describe("Color", () => {
@@ -9,5 +9,15 @@ describe("Color", () => {
       <Color color={color} filter={[]} onFilterChange={() => {}} />
     );
     expect(component).toMatchSnapshot();
+  });
+
+  it("Color call onFilterChange when checkbox checked", () => {
+    const onFilterChange = jest.fn();
+    const component = mount(
+      <Color color={color} filter={[]} onFilterChange={onFilterChange} />
+    );
+    const checkbox = component.find(".checkbox");
+    checkbox.simulate("change");
+    expect(onFilterChange).toBeCalledWith(color.id);
   });
 });

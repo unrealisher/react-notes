@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import { ConstructorColors } from "./ConstructorColors";
 
 describe("ConstructorColors", () => {
@@ -19,5 +19,15 @@ describe("ConstructorColors", () => {
       <ConstructorColors colors={colors} color={color} setColor={setColor} />
     );
     expect(component).toMatchSnapshot();
+  });
+
+  it("call setColor when label is clicked", () => {
+    const setColor = jest.fn();
+    const component = mount(
+      <ConstructorColors colors={colors} color={color} setColor={setColor} />
+    );
+    const label = component.find(".label");
+    label.forEach(item => item.simulate("click"));
+    expect(setColor.mock.calls.length).toBe(7);
   });
 });

@@ -16,4 +16,9 @@ describe("Colors", () => {
     const component = shallow(<Colors colors={colors} />);
     expect(component).toMatchSnapshot();
   });
+
+  it("not render when colors is empty array", () => {
+    const component = shallow(<Colors colors={[]} />);
+    expect(component).toMatchSnapshot();
+  });
 });
