@@ -185,4 +185,6 @@ app.get("/*", (req, res) => {
   res.sendFile(__dirname + "/static/404.html");
 });
 
-app.listen(8000);
+const port = process.env.PORT || 8000;
+
+app.listen(port);
