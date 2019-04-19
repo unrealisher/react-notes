@@ -46,7 +46,7 @@
     "typescript": "3.3.3333"
   },
   "scripts": {
-    "start": "concurrently \"node dist/index.js\" \"react-scripts start\"",
+    "start": "concurrently \"react-scripts start\" \"node dist/index.js\"",
     "serve": "npm run server | react-scripts start",
     "server": "tsc -p server && node dist/index.js",
     "storybook": "start-storybook -p 9009 -s public",
