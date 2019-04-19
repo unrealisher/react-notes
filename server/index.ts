@@ -184,9 +184,7 @@ app.get("/api/tags/:id", (req, res) => {
 
 app.use(express.static(path.resolve("../build")));
 
-app.get("/", (req, res) =>
-  res.sendFile(path.resolve(path.resolve("../build/index.html")))
-);
+app.get("/", (req, res) => res.sendFile(path.resolve("../build/index.html")));
 
 app.use("*", (req, res) => {
   return res.status(404).send("<h1>Page not found</h1>");
