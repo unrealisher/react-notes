@@ -18,7 +18,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static("static"));
-app.use(express.static("../build"));
 
 const getNoteFromColor = (
   color: string,
@@ -183,7 +182,11 @@ app.get("/api/tags/:id", (req, res) => {
 
 //По умолчанию
 
-app.get("/", (req, res) => res.sendFile(path.resolve("../build/index.html")));
+app.use(express.static(path.resolve("../build")));
+
+app.get("/", (req, res) =>
+  res.sendFile(path.resolve(path.resolve("../build/index.html")))
+);
 
 app.use("*", (req, res) => {
   return res.status(404).send("<h1>Page not found</h1>");
