@@ -1,6 +1,8 @@
 import * as express from "express";
 import * as data from "./static/data.json";
 import * as fs from "fs";
+import * as path from "path";
+import * as cors from "cors";
 import * as bodyParser from "body-parser";
 import NotesCollection from "./classes/NotesCollection";
 
@@ -14,7 +16,9 @@ const archiveCollection = NotesCollection.factory(archive);
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 app.use(express.static("static"));
+app.use(express.static("../build"));
 
 const getNoteFromColor = (
   color: string,
@@ -179,10 +183,10 @@ app.get("/api/tags/:id", (req, res) => {
 
 //По умолчанию
 
-app.get("/*", (req, res) => {
-  res.setHeader("Content-Type", "text/html; charset=utf-8");
-  res.statusCode = 404;
-  res.sendFile(__dirname + "/static/404.html");
+app.get("/", (req, res) => res.sendFile(path.resolve("../build/index.html")));
+
+app.use("*", (req, res) => {
+  return res.status(404).send("<h1>Page not found</h1>");
 });
 
 const port = process.env.PORT || 8000;
