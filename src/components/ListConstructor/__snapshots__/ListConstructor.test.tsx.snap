@@ -1,0 +1,1606 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListConstructor correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ListConstructor
+    items={
+      Array [
+        "Оливочки",
+        "Макароны",
+        "Яйца",
+        "Сливки",
+        "Хлеб",
+        "Чеснок",
+        "Сыр",
+        "Помидорки",
+        "Ветчина",
+      ]
+    }
+    setItems={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <label
+          className="label"
+        >
+          <span
+            className="label_text"
+          >
+            Текст:
+          </span>
+          <input
+            className="input"
+            onKeyUp={[Function]}
+            type="text"
+          />
+          <button
+            className="addButton"
+            onClick={[Function]}
+          />
+        </label>,
+        <ul
+          className="list"
+        >
+          <li
+            className="item"
+          >
+            <span
+              className="text"
+            >
+              Оливочки
+            </span>
+            <button
+              className="delete"
+              onClick={[Function]}
+            />
+          </li>
+          <li
+            className="item"
+          >
+            <span
+              className="text"
+            >
+              Макароны
+            </span>
+            <button
+              className="delete"
+              onClick={[Function]}
+            />
+          </li>
+          <li
+            className="item"
+          >
+            <span
+              className="text"
+            >
+              Яйца
+            </span>
+            <button
+              className="delete"
+              onClick={[Function]}
+            />
+          </li>
+          <li
+            className="item"
+          >
+            <span
+              className="text"
+            >
+              Сливки
+            </span>
+            <button
+              className="delete"
+              onClick={[Function]}
+            />
+          </li>
+          <li
+            className="item"
+          >
+            <span
+              className="text"
+            >
+              Хлеб
+            </span>
+            <button
+              className="delete"
+              onClick={[Function]}
+            />
+          </li>
+          <li
+            className="item"
+          >
+            <span
+              className="text"
+            >
+              Чеснок
+            </span>
+            <button
+              className="delete"
+              onClick={[Function]}
+            />
+          </li>
+          <li
+            className="item"
+          >
+            <span
+              className="text"
+            >
+              Сыр
+            </span>
+            <button
+              className="delete"
+              onClick={[Function]}
+            />
+          </li>
+          <li
+            className="item"
+          >
+            <span
+              className="text"
+            >
+              Помидорки
+            </span>
+            <button
+              className="delete"
+              onClick={[Function]}
+            />
+          </li>
+          <li
+            className="item"
+          >
+            <span
+              className="text"
+            >
+              Ветчина
+            </span>
+            <button
+              className="delete"
+              onClick={[Function]}
+            />
+          </li>
+        </ul>,
+      ],
+      "className": "wrapper",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="label_text"
+            >
+              Текст:
+            </span>,
+            <input
+              className="input"
+              onKeyUp={[Function]}
+              type="text"
+            />,
+            <button
+              className="addButton"
+              onClick={[Function]}
+            />,
+          ],
+          "className": "label",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Текст:",
+              "className": "label_text",
+            },
+            "ref": null,
+            "rendered": "Текст:",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "input",
+              "onKeyUp": [Function],
+              "type": "text",
+            },
+            "ref": Object {
+              "current": null,
+            },
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "addButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+        ],
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Оливочки
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>,
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Макароны
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>,
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Яйца
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>,
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Сливки
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>,
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Хлеб
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>,
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Чеснок
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>,
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Сыр
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>,
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Помидорки
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>,
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Ветчина
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>,
+          ],
+          "className": "list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text"
+                >
+                  Оливочки
+                </span>,
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />,
+              ],
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Оливочки",
+                  "className": "text",
+                },
+                "ref": null,
+                "rendered": "Оливочки",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "button",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text"
+                >
+                  Макароны
+                </span>,
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />,
+              ],
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Макароны",
+                  "className": "text",
+                },
+                "ref": null,
+                "rendered": "Макароны",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "button",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text"
+                >
+                  Яйца
+                </span>,
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />,
+              ],
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Яйца",
+                  "className": "text",
+                },
+                "ref": null,
+                "rendered": "Яйца",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "button",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text"
+                >
+                  Сливки
+                </span>,
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />,
+              ],
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Сливки",
+                  "className": "text",
+                },
+                "ref": null,
+                "rendered": "Сливки",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "button",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text"
+                >
+                  Хлеб
+                </span>,
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />,
+              ],
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Хлеб",
+                  "className": "text",
+                },
+                "ref": null,
+                "rendered": "Хлеб",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "button",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "5",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text"
+                >
+                  Чеснок
+                </span>,
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />,
+              ],
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Чеснок",
+                  "className": "text",
+                },
+                "ref": null,
+                "rendered": "Чеснок",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "button",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "6",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text"
+                >
+                  Сыр
+                </span>,
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />,
+              ],
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Сыр",
+                  "className": "text",
+                },
+                "ref": null,
+                "rendered": "Сыр",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "button",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "7",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text"
+                >
+                  Помидорки
+                </span>,
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />,
+              ],
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Помидорки",
+                  "className": "text",
+                },
+                "ref": null,
+                "rendered": "Помидорки",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "button",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "8",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text"
+                >
+                  Ветчина
+                </span>,
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />,
+              ],
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Ветчина",
+                  "className": "text",
+                },
+                "ref": null,
+                "rendered": "Ветчина",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "button",
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <label
+            className="label"
+          >
+            <span
+              className="label_text"
+            >
+              Текст:
+            </span>
+            <input
+              className="input"
+              onKeyUp={[Function]}
+              type="text"
+            />
+            <button
+              className="addButton"
+              onClick={[Function]}
+            />
+          </label>,
+          <ul
+            className="list"
+          >
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Оливочки
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Макароны
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Яйца
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Сливки
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Хлеб
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Чеснок
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Сыр
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Помидорки
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>
+            <li
+              className="item"
+            >
+              <span
+                className="text"
+              >
+                Ветчина
+              </span>
+              <button
+                className="delete"
+                onClick={[Function]}
+              />
+            </li>
+          </ul>,
+        ],
+        "className": "wrapper",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="label_text"
+              >
+                Текст:
+              </span>,
+              <input
+                className="input"
+                onKeyUp={[Function]}
+                type="text"
+              />,
+              <button
+                className="addButton"
+                onClick={[Function]}
+              />,
+            ],
+            "className": "label",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Текст:",
+                "className": "label_text",
+              },
+              "ref": null,
+              "rendered": "Текст:",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "input",
+                "onKeyUp": [Function],
+                "type": "text",
+              },
+              "ref": Object {
+                "current": null,
+              },
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "addButton",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="item"
+              >
+                <span
+                  className="text"
+                >
+                  Оливочки
+                </span>
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <span
+                  className="text"
+                >
+                  Макароны
+                </span>
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <span
+                  className="text"
+                >
+                  Яйца
+                </span>
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <span
+                  className="text"
+                >
+                  Сливки
+                </span>
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <span
+                  className="text"
+                >
+                  Хлеб
+                </span>
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <span
+                  className="text"
+                >
+                  Чеснок
+                </span>
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <span
+                  className="text"
+                >
+                  Сыр
+                </span>
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <span
+                  className="text"
+                >
+                  Помидорки
+                </span>
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />
+              </li>,
+              <li
+                className="item"
+              >
+                <span
+                  className="text"
+                >
+                  Ветчина
+                </span>
+                <button
+                  className="delete"
+                  onClick={[Function]}
+                />
+              </li>,
+            ],
+            "className": "list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text"
+                  >
+                    Оливочки
+                  </span>,
+                  <button
+                    className="delete"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Оливочки",
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": "Оливочки",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "button",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text"
+                  >
+                    Макароны
+                  </span>,
+                  <button
+                    className="delete"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Макароны",
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": "Макароны",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "button",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text"
+                  >
+                    Яйца
+                  </span>,
+                  <button
+                    className="delete"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Яйца",
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": "Яйца",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "button",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text"
+                  >
+                    Сливки
+                  </span>,
+                  <button
+                    className="delete"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Сливки",
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": "Сливки",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "button",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text"
+                  >
+                    Хлеб
+                  </span>,
+                  <button
+                    className="delete"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Хлеб",
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": "Хлеб",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "button",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "5",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text"
+                  >
+                    Чеснок
+                  </span>,
+                  <button
+                    className="delete"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Чеснок",
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": "Чеснок",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "button",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "6",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text"
+                  >
+                    Сыр
+                  </span>,
+                  <button
+                    className="delete"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Сыр",
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": "Сыр",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "button",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "7",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text"
+                  >
+                    Помидорки
+                  </span>,
+                  <button
+                    className="delete"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Помидорки",
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": "Помидорки",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "button",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "8",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text"
+                  >
+                    Ветчина
+                  </span>,
+                  <button
+                    className="delete"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Ветчина",
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": "Ветчина",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "button",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

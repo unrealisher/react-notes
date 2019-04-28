@@ -1,0 +1,1524 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagsList correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TagsList
+    activeTags={
+      Array [
+        0,
+        1,
+        3,
+      ]
+    }
+    setTags={[Function]}
+    tags={
+      Array [
+        Object {
+          "id": 0,
+          "tag": "покупки",
+        },
+        Object {
+          "id": 1,
+          "tag": "Работа",
+        },
+        Object {
+          "id": 2,
+          "tag": "ШРИ",
+        },
+        Object {
+          "id": 3,
+          "tag": "коты",
+        },
+        Object {
+          "id": 4,
+          "tag": "мемы",
+        },
+        Object {
+          "id": 5,
+          "tag": "универ",
+        },
+        Object {
+          "id": 6,
+          "tag": "домашнее задание",
+        },
+        Object {
+          "id": 7,
+          "tag": "учеба",
+        },
+        Object {
+          "id": 8,
+          "tag": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <li
+          className="item"
+        >
+          <input
+            checked={true}
+            className="checkbox"
+            hidden={true}
+            id="покупки"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="tag"
+            htmlFor="покупки"
+            onClick={[Function]}
+          >
+            покупки
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={true}
+            className="checkbox"
+            hidden={true}
+            id="Работа"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="tag"
+            htmlFor="Работа"
+            onClick={[Function]}
+          >
+            Работа
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="checkbox"
+            hidden={true}
+            id="ШРИ"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="tag"
+            htmlFor="ШРИ"
+            onClick={[Function]}
+          >
+            ШРИ
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={true}
+            className="checkbox"
+            hidden={true}
+            id="коты"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="tag"
+            htmlFor="коты"
+            onClick={[Function]}
+          >
+            коты
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="checkbox"
+            hidden={true}
+            id="мемы"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="tag"
+            htmlFor="мемы"
+            onClick={[Function]}
+          >
+            мемы
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="checkbox"
+            hidden={true}
+            id="универ"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="tag"
+            htmlFor="универ"
+            onClick={[Function]}
+          >
+            универ
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="checkbox"
+            hidden={true}
+            id="домашнее з..."
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="tag"
+            htmlFor="домашнее з..."
+            onClick={[Function]}
+          >
+            домашнее з...
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="checkbox"
+            hidden={true}
+            id="учеба"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="tag"
+            htmlFor="учеба"
+            onClick={[Function]}
+          >
+            учеба
+          </label>
+        </li>,
+        <li
+          className="item"
+        >
+          <input
+            checked={false}
+            className="checkbox"
+            hidden={true}
+            id="Neque porr..."
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="tag"
+            htmlFor="Neque porr..."
+            onClick={[Function]}
+          >
+            Neque porr...
+          </label>
+        </li>,
+      ],
+      "className": "list",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={true}
+              className="checkbox"
+              hidden={true}
+              id="покупки"
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            <label
+              className="tag"
+              htmlFor="покупки"
+              onClick={[Function]}
+            >
+              покупки
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": true,
+              "className": "checkbox",
+              "hidden": true,
+              "id": "покупки",
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "покупки",
+              "className": "tag",
+              "htmlFor": "покупки",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "покупки",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={true}
+              className="checkbox"
+              hidden={true}
+              id="Работа"
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            <label
+              className="tag"
+              htmlFor="Работа"
+              onClick={[Function]}
+            >
+              Работа
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": true,
+              "className": "checkbox",
+              "hidden": true,
+              "id": "Работа",
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Работа",
+              "className": "tag",
+              "htmlFor": "Работа",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Работа",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="ШРИ"
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            <label
+              className="tag"
+              htmlFor="ШРИ"
+              onClick={[Function]}
+            >
+              ШРИ
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "checkbox",
+              "hidden": true,
+              "id": "ШРИ",
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ШРИ",
+              "className": "tag",
+              "htmlFor": "ШРИ",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "ШРИ",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={true}
+              className="checkbox"
+              hidden={true}
+              id="коты"
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            <label
+              className="tag"
+              htmlFor="коты"
+              onClick={[Function]}
+            >
+              коты
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": true,
+              "className": "checkbox",
+              "hidden": true,
+              "id": "коты",
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "коты",
+              "className": "tag",
+              "htmlFor": "коты",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "коты",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "4",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="мемы"
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            <label
+              className="tag"
+              htmlFor="мемы"
+              onClick={[Function]}
+            >
+              мемы
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "checkbox",
+              "hidden": true,
+              "id": "мемы",
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "мемы",
+              "className": "tag",
+              "htmlFor": "мемы",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "мемы",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "5",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="универ"
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            <label
+              className="tag"
+              htmlFor="универ"
+              onClick={[Function]}
+            >
+              универ
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "checkbox",
+              "hidden": true,
+              "id": "универ",
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "универ",
+              "className": "tag",
+              "htmlFor": "универ",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "универ",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "6",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="домашнее з..."
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            <label
+              className="tag"
+              htmlFor="домашнее з..."
+              onClick={[Function]}
+            >
+              домашнее з...
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "checkbox",
+              "hidden": true,
+              "id": "домашнее з...",
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "домашнее з...",
+              "className": "tag",
+              "htmlFor": "домашнее з...",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "домашнее з...",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "7",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="учеба"
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            <label
+              className="tag"
+              htmlFor="учеба"
+              onClick={[Function]}
+            >
+              учеба
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "checkbox",
+              "hidden": true,
+              "id": "учеба",
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "учеба",
+              "className": "tag",
+              "htmlFor": "учеба",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "учеба",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "8",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="Neque porr..."
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            <label
+              className="tag"
+              htmlFor="Neque porr..."
+              onClick={[Function]}
+            >
+              Neque porr...
+            </label>,
+          ],
+          "className": "item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "className": "checkbox",
+              "hidden": true,
+              "id": "Neque porr...",
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Neque porr...",
+              "className": "tag",
+              "htmlFor": "Neque porr...",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Neque porr...",
+            "type": "label",
+          },
+        ],
+        "type": "li",
+      },
+    ],
+    "type": "ul",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <li
+            className="item"
+          >
+            <input
+              checked={true}
+              className="checkbox"
+              hidden={true}
+              id="покупки"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="tag"
+              htmlFor="покупки"
+              onClick={[Function]}
+            >
+              покупки
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={true}
+              className="checkbox"
+              hidden={true}
+              id="Работа"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="tag"
+              htmlFor="Работа"
+              onClick={[Function]}
+            >
+              Работа
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="ШРИ"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="tag"
+              htmlFor="ШРИ"
+              onClick={[Function]}
+            >
+              ШРИ
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={true}
+              className="checkbox"
+              hidden={true}
+              id="коты"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="tag"
+              htmlFor="коты"
+              onClick={[Function]}
+            >
+              коты
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="мемы"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="tag"
+              htmlFor="мемы"
+              onClick={[Function]}
+            >
+              мемы
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="универ"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="tag"
+              htmlFor="универ"
+              onClick={[Function]}
+            >
+              универ
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="домашнее з..."
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="tag"
+              htmlFor="домашнее з..."
+              onClick={[Function]}
+            >
+              домашнее з...
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="учеба"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="tag"
+              htmlFor="учеба"
+              onClick={[Function]}
+            >
+              учеба
+            </label>
+          </li>,
+          <li
+            className="item"
+          >
+            <input
+              checked={false}
+              className="checkbox"
+              hidden={true}
+              id="Neque porr..."
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="tag"
+              htmlFor="Neque porr..."
+              onClick={[Function]}
+            >
+              Neque porr...
+            </label>
+          </li>,
+        ],
+        "className": "list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={true}
+                className="checkbox"
+                hidden={true}
+                id="покупки"
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                className="tag"
+                htmlFor="покупки"
+                onClick={[Function]}
+              >
+                покупки
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": true,
+                "className": "checkbox",
+                "hidden": true,
+                "id": "покупки",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "покупки",
+                "className": "tag",
+                "htmlFor": "покупки",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "покупки",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={true}
+                className="checkbox"
+                hidden={true}
+                id="Работа"
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                className="tag"
+                htmlFor="Работа"
+                onClick={[Function]}
+              >
+                Работа
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": true,
+                "className": "checkbox",
+                "hidden": true,
+                "id": "Работа",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Работа",
+                "className": "tag",
+                "htmlFor": "Работа",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Работа",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="checkbox"
+                hidden={true}
+                id="ШРИ"
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                className="tag"
+                htmlFor="ШРИ"
+                onClick={[Function]}
+              >
+                ШРИ
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "checkbox",
+                "hidden": true,
+                "id": "ШРИ",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ШРИ",
+                "className": "tag",
+                "htmlFor": "ШРИ",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "ШРИ",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={true}
+                className="checkbox"
+                hidden={true}
+                id="коты"
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                className="tag"
+                htmlFor="коты"
+                onClick={[Function]}
+              >
+                коты
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": true,
+                "className": "checkbox",
+                "hidden": true,
+                "id": "коты",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "коты",
+                "className": "tag",
+                "htmlFor": "коты",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "коты",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="checkbox"
+                hidden={true}
+                id="мемы"
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                className="tag"
+                htmlFor="мемы"
+                onClick={[Function]}
+              >
+                мемы
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "checkbox",
+                "hidden": true,
+                "id": "мемы",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "мемы",
+                "className": "tag",
+                "htmlFor": "мемы",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "мемы",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="checkbox"
+                hidden={true}
+                id="универ"
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                className="tag"
+                htmlFor="универ"
+                onClick={[Function]}
+              >
+                универ
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "checkbox",
+                "hidden": true,
+                "id": "универ",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "универ",
+                "className": "tag",
+                "htmlFor": "универ",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "универ",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "6",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="checkbox"
+                hidden={true}
+                id="домашнее з..."
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                className="tag"
+                htmlFor="домашнее з..."
+                onClick={[Function]}
+              >
+                домашнее з...
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "checkbox",
+                "hidden": true,
+                "id": "домашнее з...",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "домашнее з...",
+                "className": "tag",
+                "htmlFor": "домашнее з...",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "домашнее з...",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "7",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="checkbox"
+                hidden={true}
+                id="учеба"
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                className="tag"
+                htmlFor="учеба"
+                onClick={[Function]}
+              >
+                учеба
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "checkbox",
+                "hidden": true,
+                "id": "учеба",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "учеба",
+                "className": "tag",
+                "htmlFor": "учеба",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "учеба",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "8",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                className="checkbox"
+                hidden={true}
+                id="Neque porr..."
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                className="tag"
+                htmlFor="Neque porr..."
+                onClick={[Function]}
+              >
+                Neque porr...
+              </label>,
+            ],
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "className": "checkbox",
+                "hidden": true,
+                "id": "Neque porr...",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Neque porr...",
+                "className": "tag",
+                "htmlFor": "Neque porr...",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Neque porr...",
+              "type": "label",
+            },
+          ],
+          "type": "li",
+        },
+      ],
+      "type": "ul",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

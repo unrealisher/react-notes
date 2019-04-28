@@ -1,4 +1,5 @@
 .color {
+  cursor: pointer;
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -20,30 +21,6 @@
   }
 }
 
-.red {
-  background-color: #e84747;
-}
-
-.orange {
-  background-color: #f2994a;
-}
-
-.yellow {
-  background-color: #f2c94c;
-}
-
-.green {
-  background-color: #219653;
-}
-
-.light-blue {
-  background-color: #56ccf2;
-}
-
-.blue {
-  background-color: #2f80ed;
-}
-
-.purple {
-  background-color: #9b51e0;
+.checkbox:checked + .color {
+  opacity: 1;
 }

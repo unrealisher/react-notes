@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tags correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Tags
+    tags={
+      Array [
+        "Покупки",
+        "Работа",
+        "ШРИ",
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <li
+          className="tag"
+        >
+          Покупки
+        </li>,
+        <li
+          className="tag"
+        >
+          Работа
+        </li>,
+        <li
+          className="tag"
+        >
+          ШРИ
+        </li>,
+      ],
+      "className": "list",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "Покупки",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Покупки",
+          "className": "tag",
+        },
+        "ref": null,
+        "rendered": "Покупки",
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "Работа",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Работа",
+          "className": "tag",
+        },
+        "ref": null,
+        "rendered": "Работа",
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "ШРИ",
+        "nodeType": "host",
+        "props": Object {
+          "children": "ШРИ",
+          "className": "tag",
+        },
+        "ref": null,
+        "rendered": "ШРИ",
+        "type": "li",
+      },
+    ],
+    "type": "ul",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <li
+            className="tag"
+          >
+            Покупки
+          </li>,
+          <li
+            className="tag"
+          >
+            Работа
+          </li>,
+          <li
+            className="tag"
+          >
+            ШРИ
+          </li>,
+        ],
+        "className": "list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "Покупки",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Покупки",
+            "className": "tag",
+          },
+          "ref": null,
+          "rendered": "Покупки",
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "Работа",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Работа",
+            "className": "tag",
+          },
+          "ref": null,
+          "rendered": "Работа",
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "ШРИ",
+          "nodeType": "host",
+          "props": Object {
+            "children": "ШРИ",
+            "className": "tag",
+          },
+          "ref": null,
+          "rendered": "ШРИ",
+          "type": "li",
+        },
+      ],
+      "type": "ul",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

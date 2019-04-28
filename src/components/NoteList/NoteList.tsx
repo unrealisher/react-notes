@@ -1,20 +1,36 @@
 import React from "react";
 
-import INote from "./../../intefaces/INote";
-import IItem from "./../../intefaces/IItem";
+import INote from "../../interfaces/INote";
+import IItem from "../../interfaces/IItem";
 
 import NoteFooter from "./../NoteFooter/NoteFooter";
 
 import styles from "./NoteList.module.scss";
+import { connect } from "react-redux";
+import { Dispatch } from "redux";
+import { setCheckItem } from "../../store/actions/checkItem";
 
-interface IProps {
-  note: INote;
-  color: string;
-  tags: string[] | undefined;
+interface IDispatchToProps {
+  onCheckboxChange: Function;
 }
 
-const NoteList = (props: IProps): JSX.Element => {
-  const { note, color, tags }: IProps = props;
+interface IProps extends IDispatchToProps {
+  note?: INote;
+  color?: string;
+  tags?: string[] | undefined;
+  setPatchItem: Function;
+  setPopup: Function;
+}
+
+export const NoteList = (props: IProps): JSX.Element => {
+  const {
+    note,
+    color,
+    tags,
+    onCheckboxChange,
+    setPatchItem,
+    setPopup
+  }: IProps = props;
 
   const getItems = (items: IItem[], checked: boolean): JSX.Element[] => {
     return items
@@ -29,6 +45,9 @@ const NoteList = (props: IProps): JSX.Element => {
                 type="checkbox"
                 className={styles.checkbox}
                 checked={item.checked ? true : false}
+                onChange={() => {
+                  onCheckboxChange(items.indexOf(item), note);
+                }}
               />
               <span className={styles.text}>{item.text}</span>
             </label>
@@ -43,23 +62,41 @@ const NoteList = (props: IProps): JSX.Element => {
         className={styles.wrapper_unchecked}
         style={{ backgroundColor: color + "66" }}
       >
-        {note.title !== undefined ? (
+        {note && note.title !== undefined && (
           <h3 className={styles.title}>{note.title}</h3>
-        ) : null}
-        {note.items !== undefined ? (
+        )}
+        {note && note.items !== undefined && (
           <ul className={styles.list_unchecked}>
             {getItems(note.items, false)}
           </ul>
-        ) : null}
+        )}
       </div>
       <div className={styles.wrapper_checked}>
-        {note.items !== undefined ? (
+        {note && note.items !== undefined && (
           <ul className={styles.list_checked}>{getItems(note.items, true)}</ul>
-        ) : null}
-        <NoteFooter tags={tags} created={note.created} />
+        )}
+        {note && (
+          <NoteFooter
+            tags={tags}
+            note={note}
+            setPatchItem={setPatchItem}
+            setPopup={setPopup}
+          />
+        )}
       </div>
     </React.Fragment>
   );
 };
 
-export default NoteList;
+const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
+  return {
+    onCheckboxChange: (index: number, note: INote) => {
+      dispatch(setCheckItem(index, note));
+    }
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(NoteList);

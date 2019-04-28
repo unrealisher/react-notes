@@ -9,6 +9,7 @@ module.exports = {
   rules: {
     indent: ["error", 2, { SwitchCase: 1 }],
     "@typescript-eslint/indent": ["error", 2, { SwitchCase: 1 }],
-    "@typescript-eslint/interface-name-prefix": 0
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/no-empty-interface": 0
   }
 };

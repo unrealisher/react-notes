@@ -1,12 +1,34 @@
 import React from "react";
 
 import styles from "./Edit.module.scss";
+import INote from "../../interfaces/INote";
+import { connect } from "react-redux";
+import { AnyAction } from "redux";
+import { archiveItem } from "../../store/actions/archiveItem";
+import { ThunkDispatch } from "redux-thunk";
+import IState from "../../interfaces/IState";
 
-const Edit = (): JSX.Element => {
+interface IDispatchToProps {
+  onArchiveClick: Function;
+}
+
+interface IProps extends IDispatchToProps {
+  note?: INote;
+  setPatchItem: Function;
+  setPopup: Function;
+}
+
+export const Edit = (props: IProps): JSX.Element => {
+  const { note, onArchiveClick, setPatchItem, setPopup } = props;
   return (
     <ul className={styles.list}>
       <li className={styles.item}>
-        <button className={styles.button}>
+        <button
+          className={styles.button}
+          onClick={() => {
+            if (note) onArchiveClick(note.id);
+          }}
+        >
           <svg
             className={styles.svg}
             width="16"
@@ -24,7 +46,13 @@ const Edit = (): JSX.Element => {
         </button>
       </li>
       <li className={styles.item}>
-        <button className={styles.button}>
+        <button
+          className={styles.button}
+          onClick={() => {
+            setPatchItem(note);
+            setPopup(true);
+          }}
+        >
           <svg
             className={styles.svg}
             width="14"
@@ -47,4 +75,17 @@ const Edit = (): JSX.Element => {
   );
 };
 
-export default Edit;
+const mapDispatchToProps = (
+  dispatch: ThunkDispatch<IState, null, AnyAction>
+): IDispatchToProps => {
+  return {
+    onArchiveClick: (id: number): void => {
+      dispatch(archiveItem(id));
+    }
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Edit);

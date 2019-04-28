@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Color correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Color
+    color={
+      Object {
+        "color": "#E84747",
+        "id": 0,
+      }
+    }
+    filter={Array []}
+    onFilterChange={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <input
+          checked={false}
+          className="checkbox"
+          hidden={true}
+          id="checkbox_#E84747"
+          onChange={[Function]}
+          type="checkbox"
+        />,
+        <label
+          className="color"
+          htmlFor="checkbox_#E84747"
+          style={
+            Object {
+              "backgroundColor": "#E84747",
+            }
+          }
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "checked": false,
+          "className": "checkbox",
+          "hidden": true,
+          "id": "checkbox_#E84747",
+          "onChange": [Function],
+          "type": "checkbox",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "color",
+          "htmlFor": "checkbox_#E84747",
+          "style": Object {
+            "backgroundColor": "#E84747",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "label",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <input
+            checked={false}
+            className="checkbox"
+            hidden={true}
+            id="checkbox_#E84747"
+            onChange={[Function]}
+            type="checkbox"
+          />,
+          <label
+            className="color"
+            htmlFor="checkbox_#E84747"
+            style={
+              Object {
+                "backgroundColor": "#E84747",
+              }
+            }
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "checked": false,
+            "className": "checkbox",
+            "hidden": true,
+            "id": "checkbox_#E84747",
+            "onChange": [Function],
+            "type": "checkbox",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "color",
+            "htmlFor": "checkbox_#E84747",
+            "style": Object {
+              "backgroundColor": "#E84747",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "label",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

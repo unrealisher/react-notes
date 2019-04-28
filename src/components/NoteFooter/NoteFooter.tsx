@@ -5,23 +5,38 @@ import Edit from "./../Edit/Edit";
 import Date from "./../Date/Date";
 
 import styles from "./NoteFooter.module.scss";
+import { connect } from "react-redux";
+import IState from "../../interfaces/IState";
+import INote from "../../interfaces/INote";
 
-interface IProps {
-  tags?: string[];
-  created: number;
+interface IStateToProps {
+  activeNotes: boolean;
 }
 
-const NoteFooter = (props: IProps): JSX.Element => {
-  const { tags, created }: IProps = props;
+interface IProps extends IStateToProps {
+  note?: INote;
+  tags?: string[];
+  setPatchItem: Function;
+  setPopup: Function;
+}
+
+export const NoteFooter = (props: IProps): JSX.Element => {
+  const { tags, note, activeNotes, setPatchItem, setPopup }: IProps = props;
   return (
     <div className={styles.footer}>
-      {tags !== undefined ? <Tags tags={tags} /> : null}
+      {tags !== undefined && <Tags tags={tags} />}
       <div className={styles.wrapper}>
-        <Edit />
-        <Date created={created} />
+        {(activeNotes && note && (
+          <Edit note={note} setPatchItem={setPatchItem} setPopup={setPopup} />
+        )) || <span />}
+        {note && <Date created={note.created} />}
       </div>
     </div>
   );
 };
 
-export default NoteFooter;
+const mapStateToProps = (state: IState): IStateToProps => {
+  return { activeNotes: state.activeNotes };
+};
+
+export default connect(mapStateToProps)(NoteFooter);

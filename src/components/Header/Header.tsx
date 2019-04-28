@@ -6,7 +6,12 @@ import Navigation from "./../Navigation/Navigation";
 
 import styles from "./Header.module.scss";
 
-const Header = (): JSX.Element => {
+interface IProps {
+  setPopup: Function;
+}
+
+export const Header = (props: IProps): JSX.Element => {
+  const { setPopup } = props;
   return (
     <div className={styles.header}>
       <h1 hidden>Яндекс Заметки</h1>
@@ -23,7 +28,7 @@ const Header = (): JSX.Element => {
         hidden
       />
       <div className={styles.navigation_wrapper}>
-        <Navigation />
+        <Navigation setPopup={setPopup} />
       </div>
     </div>
   );

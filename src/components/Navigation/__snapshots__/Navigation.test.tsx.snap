@@ -1,0 +1,500 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Navigation
+    onActiveClick={[Function]}
+    onArchiveClick={[Function]}
+    onFetchArchive={[Function]}
+    setPopup={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          hidden={true}
+        >
+          Главное меню
+        </h2>,
+        <ul
+          className="menu"
+        >
+          <li
+            className="item"
+          >
+            <button
+              className="button"
+              onClick={[Function]}
+            >
+              Активные
+            </button>
+          </li>
+          <li
+            className="item item_archive"
+          >
+            <button
+              className="button"
+              onClick={[Function]}
+            >
+              Архив
+            </button>
+          </li>
+          <li
+            className="item"
+          >
+            <button
+              className="button button_add"
+              onClick={[Function]}
+            >
+              Добавить
+            </button>
+          </li>
+          <li
+            className="item"
+          >
+            <Connect(Search) />
+          </li>
+        </ul>,
+      ],
+      "className": "navigation",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Главное меню",
+          "hidden": true,
+        },
+        "ref": null,
+        "rendered": "Главное меню",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              className="item"
+            >
+              <button
+                className="button"
+                onClick={[Function]}
+              >
+                Активные
+              </button>
+            </li>,
+            <li
+              className="item item_archive"
+            >
+              <button
+                className="button"
+                onClick={[Function]}
+              >
+                Архив
+              </button>
+            </li>,
+            <li
+              className="item"
+            >
+              <button
+                className="button button_add"
+                onClick={[Function]}
+              >
+                Добавить
+              </button>
+            </li>,
+            <li
+              className="item"
+            >
+              <Connect(Search) />
+            </li>,
+          ],
+          "className": "menu",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="button"
+                onClick={[Function]}
+              >
+                Активные
+              </button>,
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Активные",
+                "className": "button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Активные",
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="button"
+                onClick={[Function]}
+              >
+                Архив
+              </button>,
+              "className": "item item_archive",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Архив",
+                "className": "button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Архив",
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="button button_add"
+                onClick={[Function]}
+              >
+                Добавить
+              </button>,
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Добавить",
+                "className": "button button_add",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Добавить",
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Connect(Search) />,
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "nav",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            hidden={true}
+          >
+            Главное меню
+          </h2>,
+          <ul
+            className="menu"
+          >
+            <li
+              className="item"
+            >
+              <button
+                className="button"
+                onClick={[Function]}
+              >
+                Активные
+              </button>
+            </li>
+            <li
+              className="item item_archive"
+            >
+              <button
+                className="button"
+                onClick={[Function]}
+              >
+                Архив
+              </button>
+            </li>
+            <li
+              className="item"
+            >
+              <button
+                className="button button_add"
+                onClick={[Function]}
+              >
+                Добавить
+              </button>
+            </li>
+            <li
+              className="item"
+            >
+              <Connect(Search) />
+            </li>
+          </ul>,
+        ],
+        "className": "navigation",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Главное меню",
+            "hidden": true,
+          },
+          "ref": null,
+          "rendered": "Главное меню",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="item"
+              >
+                <button
+                  className="button"
+                  onClick={[Function]}
+                >
+                  Активные
+                </button>
+              </li>,
+              <li
+                className="item item_archive"
+              >
+                <button
+                  className="button"
+                  onClick={[Function]}
+                >
+                  Архив
+                </button>
+              </li>,
+              <li
+                className="item"
+              >
+                <button
+                  className="button button_add"
+                  onClick={[Function]}
+                >
+                  Добавить
+                </button>
+              </li>,
+              <li
+                className="item"
+              >
+                <Connect(Search) />
+              </li>,
+            ],
+            "className": "menu",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="button"
+                  onClick={[Function]}
+                >
+                  Активные
+                </button>,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Активные",
+                  "className": "button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Активные",
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="button"
+                  onClick={[Function]}
+                >
+                  Архив
+                </button>,
+                "className": "item item_archive",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Архив",
+                  "className": "button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Архив",
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="button button_add"
+                  onClick={[Function]}
+                >
+                  Добавить
+                </button>,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Добавить",
+                  "className": "button button_add",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Добавить",
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(Search) />,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "nav",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,31 @@
+.list {
+  display: inline-flex;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(218, 220, 224, 0.5);
+  background-color: white;
+}
+
+.item {
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background-color: rgb(163, 163, 163);
+    z-index: 2;
+  }
+}
+
+.label {
+  cursor: pointer;
+  padding: 3px 8px;
+}
+
+.radio:checked + .label {
+  background-color: #fc0;
+}

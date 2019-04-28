@@ -1,23 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./Color.module.scss";
+import IColor from "../../interfaces/IColor";
+import { connect } from "react-redux";
+import { Dispatch } from "redux";
+import { setFilterItems } from "../../store/actions/filterItems";
+import IState from "../../interfaces/IState";
 
-interface Props {
-  color: string;
+interface IStateToProps {
+  filter: number[];
 }
 
-const Color = (props: Props): JSX.Element => {
-  const { color } = props;
+interface IDispatchToProps {
+  onFilterChange: Function;
+}
+
+interface Props extends IStateToProps, IDispatchToProps {
+  color: IColor;
+}
+
+export const Color = (props: Props): JSX.Element => {
+  const { color, filter, onFilterChange } = props;
+  const [checked, setCheck] = useState(
+    color.id !== undefined && filter.indexOf(color.id) !== -1
+  );
   return (
     <React.Fragment>
-      <input type="checkbox" id={`checkbox_${color}`} hidden />
+      <input
+        className={styles.checkbox}
+        type="checkbox"
+        id={`checkbox_${color.color}`}
+        onChange={() => {
+          onFilterChange(color.id);
+          setCheck(!checked);
+        }}
+        checked={checked}
+        hidden
+      />
       <label
         className={styles.color}
-        style={{ backgroundColor: color }}
-        htmlFor={`checkbox_${color}`}
+        style={{ backgroundColor: color.color }}
+        htmlFor={`checkbox_${color.color}`}
       />
     </React.Fragment>
   );
 };
 
-export default Color;
+const mapStateToProps = (state: IState): IStateToProps => {
+  return {
+    filter: state.filter
+  };
+};
+
+const mapDispatchToProps = (dispatch: Dispatch): IDispatchToProps => {
+  return {
+    onFilterChange: (id: number): void => {
+      dispatch(setFilterItems(id));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Color);

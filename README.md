@@ -1,10 +1,13 @@
 # Личный проект «Заметки»
 
 - Студент: Мезенцев Павел.
-- Ссылка: https://sheltered-garden-85493.herokuapp.com/public/index.html
+- Ссылка: https://unrealisher-notes.herokuapp.com
 
 ---
 
 **Обратите внимание на:**
+
+1. Надо доработать вертску
+2. Написать больше тестов
 
 ---
